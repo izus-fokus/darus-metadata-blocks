@@ -1,0 +1,72 @@
+#metadataBlock	name	dataverseAlias	displayName												
+	EngMeta		Engineering Metadata												
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id
+	engMetaMode	Data Generation	How the data was generated.		text	0		TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		EngMeta
+	engMetaMeasuredVar	Measured Variables	Information about measured variables.		none	1		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		EngMeta
+	engMetaMeasuredVarName	Name	Name of this variable.		text	2	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
+	engMetaMeasuredVarSymbol	Symbol	The symbol used to describe this variable.		text	3	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
+	engMetaMeasuredVarEncoding	Encoding	The unit or scale of this variable.		text	4	[#VALUE]	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
+	engMetaMeasuredVarError	Error	A value for the uncertainty of this variable.		float	5	; #NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
+	engMetaMeasuredVarErrorDesc	Error Description	The type the error is measued (e.g. standard deviation, percentage, …)		text	6	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
+	engMetaControlledVar	Controlled Variables	Information about controlled variables.		none	7		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		EngMeta
+	engMetaControlledVarName	Name	Name of this variable.		text	8	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	engMetaControlledVar	EngMeta
+	engMetaControlledVarSymbol	Symbol	The symbol used to describe this variable.		text	9	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta
+	engMetaControlledVarEncoding	Encoding	The unit or scale of this variable.		text	10	[#VALUE]	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta
+	engMetaControlledVarValue	Value	The value of this variable.		float	11	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta
+	engMetaForcefieldPar	Force Field Parameters	Information about parameters relevant for force fields.		none	12		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta
+	engMetaForcefieldParName	Name	Name of the parameter.		text	13	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	engMetaForcefieldPar	EngMeta
+	engMetaForcefieldParSymbol	Symbol	The symbol used to describe this parameter.		text	14	(#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaForcefieldPar	EngMeta
+	engMetaForcefieldParEncoding	Encoding	The unit or scale of this parameter.		text	15	[#VALUE]	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaForcefieldPar	EngMeta
+	engMetaForcefieldParValue	Value	The value of this parameter.		float	16	: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaForcefieldPar	EngMeta
+	engMetaSystemPar	System Parameters	Parameters of the observed system.		none	17		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta
+	engMetaSystemParName	Name	Name of the parameter.		text	18	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	engMetaSystemPar	EngMeta
+	engMetaSystemParSymbol	Symbol	The symbol used to describe this parameter.		text	19	(#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaSystemPar	EngMeta
+	engMetaSystemParEncoding	Encoding	The unit or scale of this parameter.		text	20	[#VALUE]	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaSystemPar	EngMeta
+	engMetaSystemParValue	Value	The value of this parameter.		float	21	: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaSystemPar	EngMeta
+	engMetaComp	System or Phase Components	Information about a thermodynamical component of the system modeled with this dataset.		none	22		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta
+	engMetaCompId	Id	Unique number that can be referred to in the metadata. Use if Name is not unique.	Number	int	23	#VALUE.	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaComp	EngMeta
+	engMetaCompName	Name	Name of this component.		text	24	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	engMetaComp	EngMeta
+	engMetaCompSmilesCode	SmilesCode	Simplified Molecular Input Line Entry Specification		text	25	(#NAME: #VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaComp	EngMeta
+	engMetaCompIUPAC	IUPAC Name	Chemical nomenclature created and developed by the International Union of Pure and Applied Chemistry (IUPAC)		text	26	(#NAME: #VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaComp	EngMeta
+	engMetaCompQuantity	Quantity	The amount of this component.		text	27	: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaComp	EngMeta
+	engMetaCompUnit	Unit	The unit in which the amount is measured.		text	28	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaComp	EngMeta
+	engMetaCompForcefield	Force Field	Name of the force field belonging to this component (detailed information about the force field should be given under Force Field Parameters).		text	29	, #NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaComp	EngMeta
+	engMetaPhase	System Phases	Phases of the observed system.		none	30		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta
+	engMetaPhaseName	Name	Name of a phase.		text	31	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	engMetaPhase	EngMeta
+	engMetaPhaseComps	Components	List of all component names for this phase (detailed information about components should be given under System Components).		text	32	(#NAME: #VALUE)	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaPhase	EngMeta
+	engMetaForcefield	Force Field	Information about the force field for this component.		none	33		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		EngMeta
+	engMetaForcefieldName	Name	Name of the force field.		text	34	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaForcefield	EngMeta
+	engMetaForcefieldPars	Parameters	List of all parameter names relevant for this force field (detailed information about parameters should be given under Force Field Parameters entry).		text	35	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaForcefield	EngMeta
+	engMetaGitter	Spatial Resolution	Information about the spatial grid of the observation.		none	36		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		EngMeta
+	engMetaGitterCountCells	Number of Cells	The number of 2D spatial cells.		int	37	#VALUE cells	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta
+	engMetaGitterCountBlocks	Number of Blocks	The number of 3D spatial blocks.		int	38	#VALUE blocks	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta
+	engMetaGitterCountX	Number of Points X	The number of points in x-direction.		int	39	X: #VALUE points,	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta
+	engMetaGitterCountY	Number of Points Y	The number of points in y-direction.		int	40	Y: #VALUE points,	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta
+	engMetaGitterCountZ	Number of Points Z	The number of points in z-direction.		int	41	Z: #VALUE points <br>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta
+	engMetaGitterScalingFormular	Scaling Formular	If the grid is not equidistant, the distance between points can be specified via a formular.		text	42	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta
+	engMetaGitterDistance	Distance	The distance between two points.		float	43	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta
+	engMetaGitterPoints	Points	List of coordinates that describe the spatial grid (if it can not be specified otherwise).		textbox	44	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta
+	engMetaGitterUnit	Unit	The unit of the grid.		text	45	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta
+	engMetaTemp	Temporal Resolution	Temporal resolution of the observation. Can be defined either through a number of time steps with a definition of the intervals (with unit) between the timesteps (equidistant time steps) or a series of time steps together with the unit.		none	46		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		EngMeta
+	engMetaTempPoints	Points	List of time points that describe the temporal resolution (if it can not be specified otherwise).		textbox	47	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaTemp	EngMeta
+	engMetaTempCountPoints	Number of time steps	The number of time points (with equidistant distance).		int	48	#VALUE time steps	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaTemp	EngMeta
+	engMetaTempInterval	Interval	Distance between two time points.		float	49	, #NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaTemp	EngMeta
+	engMetaTempUnit	Unit	The unit of the temporal resolution.		text	50	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaTemp	EngMeta
+	engMetaFlows	Flows	Information about in- and outflows relevant for boundary conditions.		none	51		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta
+	engMetaFlowsName	Name	Name of this flow.		text	52	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaFlows	EngMeta
+	engMetaFlowsComp	Components	List of system component names this flow belongs to.		text	53	(#NAME: #VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaFlows	EngMeta
+	engMetaFlowsShape	Shape	Shape of the flow.		text	54	, #NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaFlows	EngMeta
+	engMetaFlowsSize	Size	Size of the flow.		float	55	, #NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaFlows	EngMeta
+	engMetaFlowsPosition	Position	The position of the flow.	(x, y, z)	text	56	, #NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaFlows	EngMeta
+	engMetaBoundCondPar	Boundary Parameters	Parameters relevant for boundary conditions.		none	57		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta
+	engMetaBoundCondParName	Name	Name of the parameter.		text	58	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	engMetaBoundCondPar	EngMeta
+	engMetaBoundCondParSymbol	Symbol	The symbol used to describe this parameter.		text	59	(#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCondPar	EngMeta
+	engMetaBoundCondParEncoding	Encoding	The unit or scale of this parameter.		text	60	[#VALUE]	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCondPar	EngMeta
+	engMetaBoundCondParValue	Value	The value of this parameter.		float	61	: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCondPar	EngMeta
+	engMetaBoundCond	Boundary Conditions	Definition of boundaries of the observed system.		none	62	,	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta
+	engMetaBoundCondFlows	Flows	List of in- and outflows describing this boundary condition (detailed information about flows should be given under Flows).		text	63	#NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCond	EngMeta
+	engMetaBoundCondPars	Parameters	List of all parameter names relevant for this boundary condition (detailed information about parameters should be given under Boundary Parameters.		text	64	#NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCond	EngMeta
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder											
+	engMetaMode	Simulation		0											
+	engMetaMode	Analysis		1											
+	engMetaMode	Experiment		2											
