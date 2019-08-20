@@ -6,7 +6,7 @@
 	engMetaMeasuredVarName	Name	Name of this variable.		text	2	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
 	engMetaMeasuredVarSymbol	Symbol	The symbol used to describe this variable.		text	3	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
 	engMetaMeasuredVarEncoding	Unit	The unit or scale of this variable.		text	4	[#VALUE]	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
-	engMetaMeasuredVarError	Error	A value for the uncertainty of this variable.		float	5	"; #NAME: #VALUE"	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
+	engMetaMeasuredVarError	Error	A value for the uncertainty of this variable.		float	5	; #NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
 	engMetaMeasuredVarErrorDesc	Error Description	The type the error is measured (e.g. standard deviation, percentage, …)		text	6	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
 	engMetaControlledVar	Controlled Variables	Specification of controlled (observed / independent) variables.		none	7		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		EngMeta
 	engMetaControlledVarName	Name	Name of this variable.		text	8	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	engMetaControlledVar	EngMeta
@@ -68,7 +68,7 @@
 	engMetaBoundCondParEncoding	Unit	The unit or scale of this parameter.		text	63	[#VALUE]	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCondPar	EngMeta
 	engMetaBoundCondParValue	Value	The value of this parameter.		float	64	: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCondPar	EngMeta
 															
-	#controlledVocabulary	DatasetField	Value	identifier	displayOrder										
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder										
 	engMetaMode	Simulation		0											
 	engMetaMode	Analysis		1											
 	engMetaMode	Experiment		2											

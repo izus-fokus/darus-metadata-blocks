@@ -3,7 +3,7 @@
 #datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id
 	processMethods	Processing Methods	Information about used methods in the data life cycle.		none	0		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		process
 	processMethodsName	Name	Name of the method as free text.		text	1	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	processMethods	process
-	processMethodsPars	Parameters	List of all parameter names relevant for this method (detailed information about parameters should be given under Method Parameters).		text	2	"; #NAME: #VALUE"	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processMethods	process
+	processMethodsPars	Parameters	List of all parameter names relevant for this method (detailed information about parameters should be given under Method Parameters).		text	2	; #NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processMethods	process
 	processMethodsPar	Method Parameters	Parameters relevant for processing methods.		none	3		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		process
 	processMethodsParName	Name	Name of the parameter.		text	4	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	processMethodsPar	process
 	processMethodsParSymbol	Symbol	The symbol used to describe this parameter.		text	5	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processMethodsPar	process
@@ -13,7 +13,7 @@
 	processSoftwareName	Name	Name of the software.		text	12	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	processSoftware	process
 	processSoftwareCitation	Citation	Assosicated publication to the software.		textbox	13	(#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	processSoftware	process
 	processSoftwareVersion	Version	Version of the software.	Number or commit	text	14	#NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processSoftware	process
-	processSoftwareURL	URL	Link to the software, code repository or application.		url	15	"(<a href=""#VALUE"" target=""_blank"">#VALUE</a>)"	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processSoftware	process
+	processSoftwareURL	URL	Link to the software, code repository or application.		url	15	(<a href="#VALUE" target="_blank">#VALUE</a>)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processSoftware	process
 	processSoftwareLicence	License	The license type of the software.		text	16	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	processSoftware	process
 	processInstru	Instruments	A representation of a piece of laboratory or field equipment, used in the execution of an experiment, that produces data.		none	17		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		process
 	processInstruName	Name	Name of this instrument.		text	18	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	processInstru	process
@@ -32,11 +32,11 @@
 	processStepId	Id	Used to order the processing steps.	number	int	31	#VALUE.	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process
 	processStepType	Type	Specifies the position in the data life cycle.		text	32	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	processStep	process
 	processStepDate	Date	Date this step has been performed.		date	33	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process
-	processStepMethods	Methods	List of methods used in this processing step (detailed information about methods should be given under Processing Methods).		text	34	"; #NAME: #VALUE"	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process
-	processStepErrorMethod	Error Method	Method used to measure the errors or uncertainties of this processing step.		text	35	"; #NAME: #VALUE"	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	processStep	process
-	processStepSoftware	Software	List of software names used in this processing step (detailed information about software should be given under Software).		text	36	"; #NAME: #VALUE"	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process
-	processStepHardware	Instruments	List of instrumental hardware used in this processing step (detailed information about instruments should be given under Instruments).		text	37	"; #NAME: #VALUE"	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process
-	processStepEnvironment	Environment	Name of the environment used for this processing step (detailed information about the environment should be given under Environments).		text	38	"; #NAME: #VALUE"	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	processStep	process
+	processStepMethods	Methods	List of methods used in this processing step (detailed information about methods should be given under Processing Methods).		text	34	; #NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process
+	processStepErrorMethod	Error Method	Method used to measure the errors or uncertainties of this processing step.		text	35	; #NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	processStep	process
+	processStepSoftware	Software	List of software names used in this processing step (detailed information about software should be given under Software).		text	36	; #NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process
+	processStepHardware	Instruments	List of instrumental hardware used in this processing step (detailed information about instruments should be given under Instruments).		text	37	; #NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process
+	processStepEnvironment	Environment	Name of the environment used for this processing step (detailed information about the environment should be given under Environments).		text	38	; #NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	processStep	process
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder											
 	processStepType	Generation		0											
 	processStepType	Postprocessing		1											
