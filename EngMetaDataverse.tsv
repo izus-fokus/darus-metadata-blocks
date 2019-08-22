@@ -16,7 +16,7 @@
 	engMetaPhase	System Phases	Phases of the observed system.		none	12		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta
 	engMetaPhaseName	Name	Name of a phase.		text	13	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	engMetaPhase	EngMeta
 	engMetaPhaseComps	Components	List of all component names for this phase (detailed information about components should be given under System Components).		text	14	(#NAME: #VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaPhase	EngMeta
-	engMetaComp	System or Phase Components	Specification of a component of the object of research / observed system	none	15		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta	
+	engMetaComp	System or Phase Components	Specification of a component of the object of research / observed system		none	15		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta	
 	engMetaCompId	Id	Unique number that can be referred to in the metadata. Use if Name is not unique.	Number	int	16	#VALUE.	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaComp	EngMeta
 	engMetaCompName	Name	Name of this component.		text	17	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	engMetaComp	EngMeta
 	engMetaCompInChI	InChICode	The IUPAC International Chemical Identifier		text	18	(#NAME: #VALUE)	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaComp	EngMeta
@@ -67,7 +67,6 @@
 	engMetaBoundCondParSymbol	Symbol	The symbol used to describe this parameter.		text	62	(#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCondPar	EngMeta
 	engMetaBoundCondParEncoding	Unit	The unit or scale of this parameter.		text	63	[#VALUE]	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCondPar	EngMeta
 	engMetaBoundCondParValue	Value	The value of this parameter.		float	64	: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCondPar	EngMeta
-															
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder										
 	engMetaMode	Simulation		0											
 	engMetaMode	Analysis		1											
