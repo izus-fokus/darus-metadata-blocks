@@ -1,17 +1,17 @@
 #metadataBlock	name	dataverseAlias	displayName												
 	EngMeta		Engineering Metadata												
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id
-	engMetaMode	Data Generation	Approach to data generation		text	0		TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		EngMeta
+	engMetaMode	Data Generation	Approach to data generation		text	0		TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		EngMeta
 	engMetaMeasuredVar	Measured Variables	Specification of captured (measured / simulated / surveyed / dependent) variables.		none	1		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		EngMeta
 	engMetaMeasuredVarName	Name	Name of this variable.		text	2	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
 	engMetaMeasuredVarSymbol	Symbol	The symbol used to describe this variable.		text	3	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
-	engMetaMeasuredVarEncoding	Unit	The unit or scale of this variable.		text	4	[#VALUE]	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
+	engMetaMeasuredVarUnit	Unit	The unit or scale of this variable.		text	4	[#VALUE]	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
 	engMetaMeasuredVarError	Error	A value for the uncertainty of this variable.		float	5	; #NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
 	engMetaMeasuredVarErrorDesc	Error Description	The type the error is measured (e.g. standard deviation, percentage, …)		text	6	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta
 	engMetaControlledVar	Controlled Variables	Specification of controlled (observed / independent) variables.		none	7		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		EngMeta
 	engMetaControlledVarName	Name	Name of this variable.		text	8	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	engMetaControlledVar	EngMeta
 	engMetaControlledVarSymbol	Symbol	The symbol used to describe this variable.		text	9	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta
-	engMetaControlledVarEncoding	Unit	The unit or scale of this variable.		text	10	[#VALUE]	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta
+	engMetaControlledVarUnit	Unit	The unit or scale of this variable.		text	10	[#VALUE]	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta
 	engMetaControlledVarValue	Value	The value of this variable.		float	11	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta
 	engMetaPhase	System Phases	Phases of the observed system.		none	12		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta
 	engMetaPhaseName	Name	Name of a phase.		text	13	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	engMetaPhase	EngMeta
@@ -31,12 +31,12 @@
 	engMetaForcefieldPar	Force Field Parameters	Specification of a force field parameter.		none	26		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta
 	engMetaForcefieldParName	Name	Name of the parameter.		text	27	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	engMetaForcefieldPar	EngMeta
 	engMetaForcefieldParSymbol	Symbol	The symbol used to describe this parameter.		text	28	(#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaForcefieldPar	EngMeta
-	engMetaForcefieldParEncoding	Unit	The unit or scale of this parameter.		text	29	[#VALUE]	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaForcefieldPar	EngMeta
+	engMetaForcefieldParUnit	Unit	The unit or scale of this parameter.		text	29	[#VALUE]	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaForcefieldPar	EngMeta
 	engMetaForcefieldParValue	Value	The value of this parameter.		float	30	: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaForcefieldPar	EngMeta
 	engMetaSystemPar	System Parameters	Parameters of the observed system.		none	31		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta
 	engMetaSystemParName	Name	Name of the parameter.		text	32	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	engMetaSystemPar	EngMeta
 	engMetaSystemParSymbol	Symbol	The symbol used to describe this parameter.		text	33	(#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaSystemPar	EngMeta
-	engMetaSystemParEncoding	Unit	The unit or scale of this parameter.		text	34	[#VALUE]	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaSystemPar	EngMeta
+	engMetaSystemParUnit	Unit	The unit or scale of this parameter.		text	34	[#VALUE]	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaSystemPar	EngMeta
 	engMetaSystemParValue	Value	The value of this parameter.		float	35	: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaSystemPar	EngMeta
 	engMetaGitter	Spatial Resolution	Specification of the spatial grid of the observation.		none	36		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		EngMeta
 	engMetaGitterCountCells	Number of Cells	The number of 2D spatial cells.		int	37	#VALUE cells	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta
@@ -65,9 +65,10 @@
 	engMetaBoundCondPar	Boundary Parameters	Parameters relevant for boundary conditions.		none	60		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta
 	engMetaBoundCondParName	Name	Name of the parameter.		text	61	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	engMetaBoundCondPar	EngMeta
 	engMetaBoundCondParSymbol	Symbol	The symbol used to describe this parameter.		text	62	(#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCondPar	EngMeta
-	engMetaBoundCondParEncoding	Unit	The unit or scale of this parameter.		text	63	[#VALUE]	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCondPar	EngMeta
+	engMetaBoundCondParUnit	Unit	The unit or scale of this parameter.		text	63	[#VALUE]	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCondPar	EngMeta
 	engMetaBoundCondParValue	Value	The value of this parameter.		float	64	: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCondPar	EngMeta
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder										
 	engMetaMode	Simulation		0											
 	engMetaMode	Analysis		1											
 	engMetaMode	Experiment		2											
+	engMetaMode	Prediction		3	
