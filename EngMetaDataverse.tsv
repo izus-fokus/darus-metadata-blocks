@@ -8,15 +8,15 @@
 	engMetaMeasuredVarUnit	Unit	The unit or scale of this variable.		text	4	[#VALUE]	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	
 	engMetaMeasuredVarError	Error	A value for the uncertainty of this variable.		float	5	"; #NAME: #VALUE"	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	
 	engMetaMeasuredVarErrorDesc	Error Description	The type the error is measured (e.g. standard deviation, percentage, …)		text	6	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	
-	engMetaMeasuredVarValueStart	Value Range Start	Start value of a range		float	7	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	
-	engMetaMeasuredVarValueStop	Value Range Start	Start value of a range		float	8	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	
+	engMetaMeasuredVarValueFrom	Minimum Value	The minimum value of this variable (use for ranges)		float	7	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	
+	engMetaMeasuredVarValueTo	Maximum Value	The maximum value of this variable (use for ranges)		float	8	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	
 	engMetaControlledVar	Controlled Variables	Specification of controlled (observed / independent) variables.		none	9		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		EngMeta	
 	engMetaControlledVarName	Name	Name of this variable.		text	10	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	engMetaControlledVar	EngMeta	
 	engMetaControlledVarSymbol	Symbol	The symbol used to describe this variable.		text	11	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
 	engMetaControlledVarUnit	Unit	The unit or scale of this variable.		text	12	[#VALUE]	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
-	engMetaControlledVarValue	Value	The value of this variable.		float	13	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
-	engMetaControlledVarValueStart	Value Range Start	Start value of a range		float	14	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
-	engMetaControlledVarValueStop	Value Range Start	Start value of a range		float	15	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
+	engMetaControlledVarValue	Value	The (single) value of this variable.		float	13	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
+	engMetaControlledVarValueFrom	Minimum Value	The minimum value of this variable (use for ranges)		float	14	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
+	engMetaControlledVarValueTo	Maximum Value	The maximum value of this variable  (use for ranges)		float	15	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
 	engMetaPhase	System Phases	Phases of the observed system.		none	16		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta	
 	engMetaPhaseName	Name	Name of a phase.		text	17	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	engMetaPhase	EngMeta	
 	engMetaPhaseComps	Components	List of all component names for this phase (detailed information about components should be given under System Components).		text	18	(#NAME: #VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaPhase	EngMeta	
