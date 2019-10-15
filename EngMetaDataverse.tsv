@@ -47,10 +47,10 @@
 	engMetaGitterCountBlocks	Number of Blocks	The number of 3D spatial blocks.		int	43	#VALUE blocks	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta	
 	engMetaGitterCountX	Number of Points X	The number of points in x-direction.		int	44	X: #VALUE points,	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta	
 	engMetaGitterCountY	Number of Points Y	The number of points in y-direction.		int	45	Y: #VALUE points,	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta	
-	engMetaGitterCountZ	Number of Points Z	The number of points in z-direction.		int	46	Z: #VALUE points <br>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta	
+	engMetaGitterCountZ	Number of Points Z	The number of points in z-direction.		int	46	Z: #VALUE points	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta	
 	engMetaGitterIntervalX	Interval X	The distance between the points in x-direction.		float	47	X: (#VALUE),	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta	
 	engMetaGitterIntervalY	Interval Y	The distance between the points in y-direction.		float	48	Y: (#VALUE),	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta	
-	engMetaGitterIntervalZ	Interval Z	The distance between the points in z-direction.		float	49	Z: (#VALUE) <br>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta	
+	engMetaGitterIntervalZ	Interval Z	The distance between the points in z-direction.		float	49	Z: (#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta	
 	engMetaGitterUnit	Unit	The unit of the grid.		text	50	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta	
 	engMetaGitterScalingFormular	Scaling Formular	If the grid is not equidistant, the distance between points can be specified via a formular.		text	51	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta	
 	engMetaTemp	Temporal Resolution	Temporal resolution of the observation. Can be defined either through a number of time steps with a definition of the intervals (with unit) between the timesteps (equidistant time steps) or a series of time steps together with the unit.		none	52		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		EngMeta	
