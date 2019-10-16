@@ -3,7 +3,7 @@
 #datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id
 	processMethods	Processing Methods	Information about used methods in the data life cycle.		none	0		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		process
 	processMethodsName	Name	Name of the method as free text.		text	1	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	processMethods	process
-	processMethodDescription	Description	Description of the method as free text		textbox	2	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processMethods	process
+	processMethodsDescription	Description	Description of the method as free text		textbox	2	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processMethods	process
 	processMethodsPars	Parameters	List of all parameter names relevant for this method (detailed information about parameters should be given under Method Parameters).		text	3	; #NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processMethods	process
 	processMethodsPar	Method Parameters	Parameters relevant for processing methods.		none	4		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		process
 	processMethodsParName	Name	Name of the parameter.		text	5	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	processMethodsPar	process
