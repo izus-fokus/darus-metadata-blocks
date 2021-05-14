@@ -21,7 +21,7 @@
 	enzymeMLProteinName	Protein Name	Name of protein		text	25	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	enzymeMLProtein	enzymeML	http://www.sbml.org/sbml/level3/version2/core/name											
 	enzymeMLProteinVessel	Protein Vessel	Name of the vessel in which the protein was taken		text	26		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	enzymeMLProtein	enzymeML	http://www.sbml.org/sbml/level3/version2/core/compartment											
 	enzymeMLProteinInitialConcentration	Protein Initial Concentration	Proteins initial concentration value		float	27	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	enzymeMLProtein	enzymeML	http://www.sbml.org/sbml/level3/version2/core/initialConcentration											
-	enzymeMLProtenSubstanceUnits	Protein Unit	Proteins initial concentration unit		text	28	 [#VALUE]	FALSE	TRUE	FALSE	TRUE	TRUE	FALSE	enzymeMLProtein	enzymeML	http://www.sbml.org/sbml/level3/version2/core/units											
+	enzymeMLProteinSubstanceUnits	Protein Unit	Proteins initial concentration unit		text	28	 [#VALUE]	FALSE	TRUE	FALSE	TRUE	TRUE	FALSE	enzymeMLProtein	enzymeML	http://www.sbml.org/sbml/level3/version2/core/units											
 	enzymeMLProteinConstant	Protein Constant	Specifies if the proteins concentration is constant or not		text	29	: #VALUE	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE	enzymeMLProtein	enzymeML	http://www.sbml.org/sbml/level3/version2/core/constant											
 	enzymeMLProteinSequence	Protein Sequence	Aminoacid sequence of the protein		text	30	/ #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	enzymeMLProtein	enzymeML	http://sbml.org/enzymeml/version1/sequence											
 	enzymeMLProteinOrganism	Protein Organism	Source organism of the protein		text	31	/ #VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	enzymeMLProtein	enzymeML	http://sbml.org/enzymeml/version1/organism											
