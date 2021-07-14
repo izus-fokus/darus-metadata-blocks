@@ -39,6 +39,7 @@
 	enzymeMLKineticLaw	Kinetic Law			none	43		TRUE	FALSE	TRUE	FALSE	TRUE	FALSE		enzymeML	http://www.sbml.org/sbml/level3/version2/core/kineticLaw
 	enzymeMLKineticLawReaction	Reaction Name	Reference to the reaction which has been modeled		text	44	Reaction ID: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	enzymeMLKineticLaw	enzymeML	http://www.sbml.org/sbml/level3/version2/core/reaction
 	enzymeMLKineticLawEquation	Reaction Kinetic Model	Mathematical equation of the model		text	45	/ #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	enzymeMLKineticLaw	enzymeML	http://www.sbml.org/sbml/level3/version2/core/kineticLaw
+	
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
 	enzymeMLVesselUnits	ul		0												
 	enzymeMLVesselUnits	ml		1												

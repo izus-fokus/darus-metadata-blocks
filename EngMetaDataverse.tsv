@@ -10,15 +10,15 @@
 	engMetaMeasuredVarErrorDesc	Error Description	The type the error is measured (e.g. standard deviation, percentage, …)		text	6	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	
 	engMetaMeasuredVarValueFrom	Minimum Value	The minimum value of this variable (use for ranges)		float	7	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	https://schema.org/minValue
 	engMetaMeasuredVarValueTo	Maximum Value	The maximum value of this variable (use for ranges)		float	8	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	https://schema.org/maxValue
-	engMetaControlledVar	Controlled Variables	Specification of controlled (observed / independent) variables.		none	9		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		EngMeta	
-	engMetaControlledVarName	Name	Name of this variable.		text	10	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	engMetaControlledVar	EngMeta	
-	engMetaControlledVarSymbol	Symbol	The symbol used to describe this variable.		text	11	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
-	engMetaControlledVarUnit	Unit	The unit or scale of this variable.		text	12	[#VALUE]	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
-	engMetaControlledVarValue	Value	The (single) value of this variable.		float	13	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
-	engMetaControlledVarTextValue	TextualValue	The textual value of this variable.		float	14	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
+	engMetaMeasuredVarTextValue	Textual Value	The value of this measured variable (for non numerical values).			9	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMEta	
+	engMetaControlledVar	Controlled Variables	Specification of controlled (observed / independent) variables.		none	10		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		EngMeta	
+	engMetaControlledVarName	Name	Name of this variable.		text	11	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	engMetaControlledVar	EngMeta	
+	engMetaControlledVarSymbol	Symbol	The symbol used to describe this variable.		text	12	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
+	engMetaControlledVarUnit	Unit	The unit or scale of this variable.		text	13	[#VALUE]	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
+	engMetaControlledVarValue	Value	The (single) value of this variable.		float	14	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
 	engMetaControlledVarValueFrom	Minimum Value	The minimum value of this variable (use for ranges)		float	15	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
 	engMetaControlledVarValueTo	Maximum Value	The maximum value of this variable  (use for ranges)		float	16	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
-	engMetaControlledVarTextualValue	TextualValue	The value of this parameter (for non numerical values).		text	17	: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaSystemPar	EngMeta	
+	engMetaControlledVarTextValue	Textual Value	The value of this controlled variable (for non numerical values).		text	17	: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaSystemPar	EngMeta	
 	engMetaPhase	System Phases	Phases of the observed system.		none	18		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		EngMeta	
 	engMetaPhaseName	Name	Name of a phase.		text	19	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	engMetaPhase	EngMeta	
 	engMetaPhaseComps	Components	List of all component names for this phase (detailed information about components should be given under System Components).		text	20	(#NAME: #VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaPhase	EngMeta	
@@ -44,7 +44,7 @@
 	engMetaSystemParSymbol	Symbol	The symbol used to describe this parameter.		text	40	(#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaSystemPar	EngMeta	
 	engMetaSystemParUnit	Unit	The unit or scale of this parameter.		text	41	[#VALUE]	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaSystemPar	EngMeta	
 	engMetaSystemParValue	Value	The (numerical) value of this parameter.		float	42	: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaSystemPar	EngMeta	
-	engMetaSystemParTextValue	TextualValue	The value of this parameter (for non numerical values).		text	43	: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaSystemPar	EngMeta	
+	engMetaSystemParTextValue	Textual Value	The value of this system parameter (for non numerical values).		text	43	: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaSystemPar	EngMeta	
 	engMetaGitter	Spatial Resolution	Specification of the spatial grid of the observation.		none	44		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		EngMeta	
 	engMetaGitterCountCells	Number of Cells	The number of 2D spatial cells.		int	45	#VALUE cells	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta	
 	engMetaGitterCountBlocks	Number of Blocks	The number of 3D spatial blocks.		int	46	#VALUE blocks	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaGitter	EngMeta	

@@ -10,7 +10,7 @@
 	processMethodsParSymbol	Symbol	The symbol used to describe this parameter.		text	6	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processMethodsPar	process	
 	processMethodsParUnit	Unit	The unit or scale of this parameter.		text	7	[#VALUE]	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processMethodsPar	process	
 	processMethodsParValue	Value	The (numerical) value of this parameter.		float	8	: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processMethodsPar	process	
-	processMethodsParTextValue	TextualValue	The value of this parameter. (for non numerical values)		float	9	: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processMethodsPar	process	
+	processMethodsParTextValue	Textual Value	The value of this method parameter. (for non numerical values)		float	9	: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processMethodsPar	process	
 	processSoftware	Software	Information about used software.		none	10		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		process	https://schema.org/SoftwareApplication
 	processSoftwareName	Name	Name of the software.		text	11	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	processSoftware	process	https://schema.org/name
 	processSoftwareCitation	Citation	Assosicated publication to the software.		textbox	12	(#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	processSoftware	process	https://schema.org/citation
