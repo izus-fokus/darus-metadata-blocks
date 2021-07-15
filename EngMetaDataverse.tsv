@@ -10,7 +10,7 @@
 	engMetaMeasuredVarErrorDesc	Error Description	The type the error is measured (e.g. standard deviation, percentage, …)		text	6	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	
 	engMetaMeasuredVarValueFrom	Minimum Value	The minimum value of this variable (use for ranges)		float	7	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	https://schema.org/minValue
 	engMetaMeasuredVarValueTo	Maximum Value	The maximum value of this variable (use for ranges)		float	8	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	https://schema.org/maxValue
-	engMetaMeasuredVarTextValue	Textual Value	The value of this measured variable (for non numerical values).			9	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMEta	
+	engMetaMeasuredVarTextValue	Textual Value	The value of this measured variable (for non numerical values).	text		9	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMEta	
 	engMetaControlledVar	Controlled Variables	Specification of controlled (observed / independent) variables.		none	10		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		EngMeta	
 	engMetaControlledVarName	Name	Name of this variable.		text	11	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	engMetaControlledVar	EngMeta	
 	engMetaControlledVarSymbol	Symbol	The symbol used to describe this variable.		text	12	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaControlledVar	EngMeta	
