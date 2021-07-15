@@ -40,7 +40,7 @@
 	processStepHardware	Instruments	List of instrumental hardware used in this processing step (detailed information about instruments should be given under Instruments).		text	36	"; #NAME: #VALUE"	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process	
 	processStepEnvironment	Environment	Name of the environment used for this processing step (detailed information about the environment should be given under Environments).		text	37	"; #NAME: #VALUE"	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	processStep	process	
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
-	processStepType	Generation		0												
-	processStepType	Postprocessing		1												
-	processStepType	Analysis		2												
-	processStepType	Other		3												
+	processStepType	Generation	0	0												
+	processStepType	Postprocessing	1	1												
+	processStepType	Analysis	2	2												
+	processStepType	Other	3	3												
