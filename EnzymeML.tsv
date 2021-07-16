@@ -33,30 +33,29 @@
 	enzymeMLReactionTemperatureUnit	Reaction Temperature Unit	Temperature unit		text	37	 #VALUE / 	FALSE	TRUE	FALSE	FALSE	TRUE	FALSE	enzymeMLReaction	enzymeML	http://sbml.org/enzymeml/version1/temperature
 	enzymeMLReactionpH	Reaction pH Value	pH value at which the experiment was done		float	38	pH #VALUE ]	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	enzymeMLReaction	enzymeML	http://sbml.org/enzymeml/version1/ph
 	enzymeMLReactionEduct	Reaction Educt	Comma separated list of educts		text	39	educt: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	enzymeMLReaction	enzymeML	
-	enzymeMLReactionProduct	Reaction Product	Comma separated list of educts		text	40	product: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	enzymeMLReaction	enzymeML	
-	enzymeMLReactionModifier	Reaction Modifier	Comma separated list of educts		text	41	modifier: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	enzymeMLReaction	enzymeML	
+	enzymeMLReactionProduct	Reaction Product	Comma separated list of products		text	40	product: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	enzymeMLReaction	enzymeML	
+	enzymeMLReactionModifier	Reaction Modifier	Comma separated list of reaction modifiers		text	41	modifier: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	enzymeMLReaction	enzymeML	
 	enzymeMLReactionEquation	Reaction equation	"Equation describing the reaction - Separate educts and products via ""->"" and denote stoichiometries by ""Y x Molecule"""		text	42	// #VALUE	TRUE	FALSE	TRUE	TRUE	TRUE	FALSE	enzymeMLReaction	enzymeML	
 	enzymeMLKineticLaw	Kinetic Law			none	43		TRUE	FALSE	TRUE	FALSE	TRUE	FALSE		enzymeML	http://www.sbml.org/sbml/level3/version2/core/kineticLaw
 	enzymeMLKineticLawReaction	Reaction Name	Reference to the reaction which has been modeled		text	44	Reaction ID: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	enzymeMLKineticLaw	enzymeML	http://www.sbml.org/sbml/level3/version2/core/reaction
 	enzymeMLKineticLawEquation	Reaction Kinetic Model	Mathematical equation of the model		text	45	/ #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	enzymeMLKineticLaw	enzymeML	http://www.sbml.org/sbml/level3/version2/core/kineticLaw
-	
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
-	enzymeMLVesselUnits	ul		0												
-	enzymeMLVesselUnits	ml		1												
-	enzymeMLVesselUnits	l		2												
+	enzymeMLVesselUnits	ul	0	0												
+	enzymeMLVesselUnits	ml	1	1												
+	enzymeMLVesselUnits	l	2	2												
 	enzymeMLVesselConstant	TRUE	1	0												
 	enzymeMLVesselConstant	FALSE	0	1												
-	enzymeMLReactantSubstanceUnits	nM		0												
-	enzymeMLReactantSubstanceUnits	uM		1												
-	enzymeMLReactantSubstanceUnits	mM		2												
-	enzymeMLReactantSubstanceUnits	M		3												
+	enzymeMLReactantSubstanceUnits	nM	0	0												
+	enzymeMLReactantSubstanceUnits	uM	1	1												
+	enzymeMLReactantSubstanceUnits	mM	2	2												
+	enzymeMLReactantSubstanceUnits	M	3	3												
 	enzymeMLReactantConstant	TRUE	1	0												
 	enzymeMLReactantConstant	FALSE	0	1												
-	enzymeMLProteinSubstanceUnits	pM		0												
-	enzymeMLProteinSubstanceUnits	nM		1												
-	enzymeMLProteinSubstanceUnits	uM		2												
-	enzymeMLProteinSubstanceUnits	mM		3												
-	enzymeMLProteinSubstanceUnits	M		4												
+	enzymeMLProteinSubstanceUnits	pM	0	0												
+	enzymeMLProteinSubstanceUnits	nM	1	1												
+	enzymeMLProteinSubstanceUnits	uM	2	2												
+	enzymeMLProteinSubstanceUnits	mM	3	3												
+	enzymeMLProteinSubstanceUnits	M	4	4												
 	enzymeMLProteinConstant	TRUE	1	0												
 	enzymeMLProteinConstant	FALSE	0	1												
 	enzymeMLReactionTemperatureUnit	Celsius		0												
