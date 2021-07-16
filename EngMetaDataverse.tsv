@@ -76,7 +76,7 @@
 	engMetaBoundCondParUnit	Unit	The unit or scale of this parameter.		text	72	[#VALUE]	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCondPar	EngMeta	https://schema.org/unitCode
 	engMetaBoundCondParValue	Value	The value of this parameter.		float	73	: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	engMetaBoundCondPar	EngMeta	https://schema.org/value
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
-	engMetaMode	Simulation		0												
-	engMetaMode	Analysis		1												
-	engMetaMode	Experiment		2												
-	engMetaMode	Prediction		3												
+	engMetaMode	Simulation	0	0												
+	engMetaMode	Analysis	1	1												
+	engMetaMode	Experiment	2	2												
+	engMetaMode	Prediction	3	3												
