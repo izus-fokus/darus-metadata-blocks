@@ -77,7 +77,7 @@
 	softwareVersion	Version	Version of the software used to generate the Dataset.		text	73	#NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	software	citation
 	relatedMaterial	Related Material	Any material related to this Dataset.		textbox	74		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation
 	relatedDatasets	Related Datasets	Any Datasets that are related to this Dataset, such as previous research on this subject.		textbox	75		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	http://purl.org/dc/terms/relation
-	otherReferences	Other References	Any references that would serve as background or supporting material to this Dataset.		text	76		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	http://purl.org/dc/terms/references
+	otherReferences	Other References	Any references that would serve as background or supporting material to this Dataset.		textbox	76		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	http://purl.org/dc/terms/references
 	dataSources	Data Sources	List of books, articles, serials, or machine-readable data files that served as the sources of the data collection.		textbox	77		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	https://www.w3.org/TR/prov-o/#wasDerivedFrom	
 	originOfSources	Origin of Sources	For historical materials, information about the origin of the sources and the rules followed in establishing the sources should be specified.		textbox	78		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		citation
 	characteristicOfSources	Characteristic of Sources Noted	Assessment of characteristics and source material.		textbox	79		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		citation
