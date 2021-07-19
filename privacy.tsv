@@ -1,5 +1,5 @@
 #metadataBlock	name	dataverseAlias	displayName	blockURI												
-	Privacy		Privacy Metadata													
+	privacy		Privacy Metadata													
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
 	privData	Personal Data	Does the dataset contain personal data according to Art. 4 GDPR?		text	0	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	TRUE		privacy	
 	privSpecial	Special Categories	Does the dataset contain special categories of personal data according to Art.9 GDPR?		text	1	#VALUE	TRUE	TRUE	FALSE	TRUE	FALSE	FALSE		privacy	
