@@ -14,11 +14,11 @@
 	processSoftware	Software	Information about used software.		none	10		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		process	https://schema.org/SoftwareApplication
 	processSoftwareName	Name	Name of the software.		text	11	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	processSoftware	process	https://schema.org/name
 	processSoftwareVersion	Version	Version of the software.	Number or commit	text	12	#NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processSoftware	process	https://schema.org/version
-	processSoftwareIDType	ID Type	The type of digital identifier used for this software (e.g., Digital Object Identifier (DOI)).		text	13	#VALUE:	TRUE	TRUE	FALSE	FALSE	TRUE	FALSE	processSoftware	process	http://purl.org/spar/datacite/ResourceIdentifierScheme
-	processSoftwareIDNumber	ID Number	The identifier for the selected ID type.		text	14	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processSoftware	process	http://purl.org/spar/datacite/ResourceIdentifier
-	processSoftwareCitation	Citation	Assosicated text publication to the software.		textbox	15	(#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	processSoftware	process	https://schema.org/citation
-	processSoftwareURL	URL	Link to the software, code repository or application.		url	16	"(<a href=""#VALUE"" target=""_blank"">#VALUE</a>)"	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processSoftware	process	https://schema.org/downloadUrl
-	processSoftwareLicence	License	The license type of the software.		text	17	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	processSoftware	process	https://schema.org/license
+	processSoftwareIDType	ID Type	The type of digital identifier used for this software (e.g., Digital Object Identifier (DOI)).		text	15	#VALUE:	TRUE	TRUE	FALSE	FALSE	TRUE	FALSE	processSoftware	process	http://purl.org/spar/datacite/ResourceIdentifierScheme
+	processSoftwareIDNumber	ID Number	The identifier for the selected ID type.		text	16	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processSoftware	process	http://purl.org/spar/datacite/ResourceIdentifier
+	processSoftwareCitation	Citation	Assosicated text publication to the software.		textbox	17	(#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	processSoftware	process	https://schema.org/citation
+	processSoftwareURL	URL	Link to the software, code repository or application.		url	13	"(<a href=""#VALUE"" target=""_blank"">#VALUE</a>)"	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processSoftware	process	https://schema.org/downloadUrl
+	processSoftwareLicence	License	The license type of the software.		text	14	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	processSoftware	process	https://schema.org/license
 	processInstru	Instruments	A representation of a piece of laboratory or field equipment, used in the execution of an experiment, that produces data.		none	18		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		process	https://schema.org/instrument
 	processInstruName	Name	Name of this instrument.		text	19	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	processInstru	process	https://schema.org/name
 	processInstruDescr	Description	Description of the instrument, e.g., what it is used for.		text	20	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processInstru	process	https://schema.org/description
