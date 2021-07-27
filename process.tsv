@@ -20,7 +20,7 @@
 	processSoftwareURL	URL	Link to the software, code repository or application.		url	13	"(<a href=""#VALUE"" target=""_blank"">#VALUE</a>)"	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processSoftware	process	https://schema.org/downloadUrl
 	processSoftwareLicence	License	The license type of the software.		text	14	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	processSoftware	process	https://schema.org/license
 	processInstru	Instruments	A representation of a piece of laboratory or field equipment, used in the execution of an experiment, that produces data.		none	18		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		process	https://schema.org/instrument
-	processInstruName	Name	Name of this instrument.		text	19	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	processInstru	process	https://schema.org/name
+	processInstruName	Name	Name of this instrument.		text	19	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	processInstru	process	https://schema.org/name
 	processInstruDescr	Description	Description of the instrument, e.g., what it is used for.		text	20	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processInstru	process	https://schema.org/description
 	processInstruType	Version	The type or version of this instrument.		text	21	, #NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	processInstru	process	
 	processInstruPartnum	Part Number	A vendors part number for an instrument or a piece of equipment.		text	22	, #NAME: #VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE	processInstru	process	https://schema.org/identifier
