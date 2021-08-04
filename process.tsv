@@ -4,7 +4,7 @@
 	processMethods	Processing Methods	Information about used methods in the data life cycle.		none	0		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		process	
 	processMethodsName	Name	Name of the method as free text.		text	1	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	processMethods	process	https://schema.org/measurementTechnique
 	processMethodsDescription	Description	Description of the method as free text		textbox	2	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processMethods	process	
-	processMethodsPars	Parameters	List of all parameter names relevant for this method (detailed information about parameters should be given under Method Parameters).		text	3	"; #NAME: #VALUE"	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processMethods	process	
+	processMethodsPars	Parameters	List of all parameter names relevant for this method (detailed information about parameters should be given under Method Parameters).		text	3	; #NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processMethods	process	
 	processMethodsPar	Method Parameters	Parameters relevant for processing methods.		none	4		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		process	
 	processMethodsParName	Name	Name of the parameter.		text	5	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	processMethodsPar	process	
 	processMethodsParSymbol	Symbol	The symbol used to describe this parameter.		text	6	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processMethodsPar	process	
@@ -36,11 +36,11 @@
 	processStepId	Id	Used to order the processing steps.	number	int	32	#VALUE.	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process	
 	processStepType	Type	Specifies the position in the data life cycle.		text	33	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE	processStep	process	
 	processStepDate	Date	Date this step has been performed.		date	34	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process	https://schema.org/startTime
-	processStepMethods	Methods	List of methods used in this processing step (detailed information about methods should be given under Processing Methods).		text	35	"; #NAME: #VALUE"	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process	
-	processStepErrorMethod	Error Method	Method used to measure the errors or uncertainties of this processing step.		text	36	"; #NAME: #VALUE"	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	processStep	process	
-	processStepSoftware	Software	List of software names used in this processing step (detailed information about software should be given under Software).		text	37	"; #NAME: #VALUE"	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process	
-	processStepHardware	Instruments	List of instrumental hardware used in this processing step (detailed information about instruments should be given under Instruments).		text	38	"; #NAME: #VALUE"	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process	
-	processStepEnvironment	Environment	Name of the environment used for this processing step (detailed information about the environment should be given under Environments).		text	39	"; #NAME: #VALUE"	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	processStep	process	
+	processStepMethods	Methods	List of methods used in this processing step (detailed information about methods should be given under Processing Methods).		text	35	; #NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process	
+	processStepErrorMethod	Error Method	Method used to measure the errors or uncertainties of this processing step.		text	36	; #NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	processStep	process	
+	processStepSoftware	Software	List of software names used in this processing step (detailed information about software should be given under Software).		text	37	; #NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process	
+	processStepHardware	Instruments	List of instrumental hardware used in this processing step (detailed information about instruments should be given under Instruments).		text	38	; #NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process	
+	processStepEnvironment	Environment	Name of the environment used for this processing step (detailed information about the environment should be given under Environments).		text	39	; #NAME: #VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	processStep	process	
 	processStepInput	Input	Name of the file or object that was the input of this processing step		text	40	; #NAME: #VALUE	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE	processStep	process	
 	processStepOutput	Output	Name of the file or object that was the output of this processing step		text	41	; #NAME: #VALUE	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE	processStep	process	
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
