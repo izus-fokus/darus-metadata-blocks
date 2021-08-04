@@ -17,7 +17,7 @@
 	processSoftwareIDType	ID Type	The type of digital identifier used for this software (e.g., Digital Object Identifier (DOI)).		text	15	#VALUE:	TRUE	TRUE	FALSE	FALSE	TRUE	FALSE	processSoftware	process	http://purl.org/spar/datacite/ResourceIdentifierScheme
 	processSoftwareIDNumber	ID Number	The identifier for the selected ID type.		text	16	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processSoftware	process	http://purl.org/spar/datacite/ResourceIdentifier
 	processSoftwareCitation	Citation	Assosicated text publication to the software.		textbox	17	(#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	processSoftware	process	https://schema.org/citation
-	processSoftwareURL	URL	Link to the software, code repository or application.		url	13	"(<a href=""#VALUE"" target=""_blank"">#VALUE</a>)"	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processSoftware	process	https://schema.org/downloadUrl
+	processSoftwareURL	URL	Link to the software, code repository or application.		url	13	(<a href='#VALUE' target='_blank'>#VALUE</a>)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	processSoftware	process	https://schema.org/downloadUrl
 	processSoftwareLicence	License	The license type of the software.		text	14	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	processSoftware	process	https://schema.org/license
 	processInstru	Instruments	A representation of a piece of laboratory or field equipment, used in the execution of an experiment, that produces data.		none	18		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		process	https://schema.org/instrument
 	processInstruName	Name	Name of this instrument.		text	19	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	processInstru	process	https://schema.org/name
@@ -41,8 +41,8 @@
 	processStepSoftware	Software	List of software names used in this processing step (detailed information about software should be given under Software).		text	37	"; #NAME: #VALUE"	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process	
 	processStepHardware	Instruments	List of instrumental hardware used in this processing step (detailed information about instruments should be given under Instruments).		text	38	"; #NAME: #VALUE"	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	processStep	process	
 	processStepEnvironment	Environment	Name of the environment used for this processing step (detailed information about the environment should be given under Environments).		text	39	"; #NAME: #VALUE"	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	processStep	process	
-	processStepInput	Input	Name of the file or object that was the input of this processing step		text	40	"; #NAME: #VALUE"	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE	processStep	process	
-	processStepOutput	Output	Name of the file or object that was the output of this processing step		text	41	"; #NAME: #VALUE"	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE	processStep	process	
+	processStepInput	Input	Name of the file or object that was the input of this processing step		text	40	; #NAME: #VALUE	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE	processStep	process	
+	processStepOutput	Output	Name of the file or object that was the output of this processing step		text	41	; #NAME: #VALUE	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE	processStep	process	
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
 	processStepType	Generation	0	0												
 	processStepType	Postprocessing	1	1												
