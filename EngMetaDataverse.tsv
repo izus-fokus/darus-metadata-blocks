@@ -6,7 +6,7 @@
 	engMetaMeasuredVarName	Name	Name of this variable.		text	2	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	TRUE	engMetaMeasuredVar	EngMeta	https://schema.org/name
 	engMetaMeasuredVarSymbol	Symbol	The symbol used to describe this variable.		text	3	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	https://schema.org/unitCode
 	engMetaMeasuredVarUnit	Unit	The unit or scale of this variable.		text	4	[#VALUE]	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	https://schema.org/unitCode
-	engMetaMeasuredVarError	Error	A value for the uncertainty of this variable.		float	5	"; #NAME: #VALUE"	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	
+	engMetaMeasuredVarError	Error	A value for the uncertainty of this variable.		float	5	; #NAME: #VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	
 	engMetaMeasuredVarErrorDesc	Error Description	The type the error is measured (e.g. standard deviation, percentage, …)		text	6	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	
 	engMetaMeasuredVarValueFrom	Minimum Value	The minimum value of this variable (use for ranges)		float	7	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	https://schema.org/minValue
 	engMetaMeasuredVarValueTo	Maximum Value	The maximum value of this variable (use for ranges)		float	8	: #VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	engMetaMeasuredVar	EngMeta	https://schema.org/maxValue
