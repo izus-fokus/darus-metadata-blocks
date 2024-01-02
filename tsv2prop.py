@@ -21,8 +21,8 @@ def tsv2prop():
         #print(indxCV)
         #print(indxEnd)
         ## DEBUG
-        outfile = infile.split('.')[0] + '.properties'
-        print(outfile)
+        outfile = md_df.name[0] + '.properties'
+        print('The properties are written to ' + outfile)
         with open(outfile,'w') as fid:
             for ii in range(0,indxDS):
                 fid.write('metadatablock.name=' + md_df.name[ii] + '\n')

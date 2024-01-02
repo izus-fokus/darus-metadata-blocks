@@ -34,19 +34,19 @@
 	imageAvail	Image availability	Is the image available as a tarball or as a image in a image registry?		text			FALSE	TRUE	FALSE			TRUE	imageDetails	containermeta	
 	AltDarus	Image url	Specify a url of the image location.		url			FALSE	FALSE	FALSE			FALSE	imageDetails	containermeta	
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
-	protocol	tcp	0	0												
-	protocol	udp	1	1												
-	networkMode	bridge	0	0												
-	networkMode	ptp	1	1												
-	networkMode	ipvlan	2	2												
-	networkMode	macvlan	3	3												
-	networkMode	none	4	4												
-	mountType	volume	0	0												
-	mountType	bind Mount	1	1												
-	mountType	tmpfs mount	2	2												
-	mountType	image mount	3	3												
-	imageAvail	No	0	0												
-	imageAvail	Yes	1	1												
+	protocol	tcp	tcp	0												
+	protocol	udp	udp	1												
+	networkMode	bridge	bridge	0												
+	networkMode	ptp	ptp	1												
+	networkMode	ipvlan	ipvlan	2												
+	networkMode	macvlan	macvlan	3												
+	networkMode	none	none	4												
+	mountType	volume	volume	0												
+	mountType	bind Mount	bind_mount	1												
+	mountType	tmpfs mount	tmpfs_mount	2												
+	mountType	image mount	image_mount	3												
+	imageAvail	No	no	0												
+	imageAvail	Yes	yes	1												
 																
 																
 may be important																
