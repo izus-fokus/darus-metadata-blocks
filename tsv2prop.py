@@ -29,8 +29,11 @@ def tsv2prop():
                 fid.write('metadatablock.displayName=' + md_df.displayName[ii] + '\n')
             for ii in range(indxDS+1,indxCV):
                 fid.write('datasetfieldtype.' + md_df.name[ii] + '.title=' + md_df.dataverseAlias[ii] + '\n')
-                fid.write('datasetfieldtype.' + md_df.name[ii] + '.description=' + md_df.dataverseAlias[ii] + '\n')
-                fid.write('datasetfieldtype.' + md_df.name[ii] + '.watermark=' + md_df.dataverseAlias[ii] + '\n')
+                fid.write('datasetfieldtype.' + md_df.name[ii] + '.description=' + md_df.displayName[ii] + '\n')
+                if str(md_df.blockURI[ii]) != 'nan':
+                    fid.write('datasetfieldtype.' + md_df.name[ii] + '.watermark=' + str(md_df.blockURI[ii]) + '\n')
+                else:
+                    fid.write('datasetfieldtype.' + md_df.name[ii] + '.watermark=\n')
             for ii in range(indxCV+1,indxEnd):
                 fid.write('controlledvocabulary.' + md_df.name[ii] + '.' 
                         + md_df.displayName[ii] + '=' + md_df.dataverseAlias[ii] + '\n')
