@@ -1,4 +1,4 @@
-#metadataBlock	name	dataverseAlias	displayName													
+#metadataBlock	name	dataverseAlias	displayName	blockURI												
 	process		Process Metadata													
 #datasetField	name	title	description	watermark	 fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
 	processMethods	Processing Methods	Information about used methods in the data life cycle.		none	0		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		process	
