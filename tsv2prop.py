@@ -1,12 +1,24 @@
 """Module containing methods to generate
    properties from custom metadata tsv
 """
+import sys
+import glob
 import pandas as pd
 
-print("This script generates properties from custom metadata tsv")
+help = """
+Usage: python tsv2prop.py <file.tsv>
+       (runs script for specified tsv file)
+   or:
+       python tsv2prop.py --all
+       (runs script for all tsv files in current directory)
+   or:
+       python tsv2prop --help
+       (prints this help page)
+"""
 
-def tsv2prop():
-    infile = input('Enter name of tsv file: ')
+def tsv2prop(infile=None):
+    if not infile:
+        infile = input('Enter name of tsv file: ')
     try:
         # read tsv data
         with open(infile,'r') as fid:
@@ -39,7 +51,25 @@ def tsv2prop():
                         + md_df.displayName[ii] + '=' + md_df.dataverseAlias[ii] + '\n')
 
     except FileNotFoundError:
-        print("File does not exist") 
-            
+        raise SystemExit("File does not exist")
+
+def main():
+    try:
+        arg = sys.argv[1]
+        if arg == '--help':
+            exit(help)
+        
+        print("This script generates properties files from custom metadata tsv")
+        if arg == '--all':
+            filelist = [f for f in glob.glob("*.tsv")]
+            for f in filelist:
+                tsv2prop(infile=f)
+            exit
+        
+        tsv2prop(infile = arg)
+    
+    except IndexError:
+        raise SystemExit(help)        
+
 if __name__ == '__main__':
-    tsv2prop()
+    main()
