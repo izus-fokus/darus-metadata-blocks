@@ -6,7 +6,7 @@
 	archiveArchivedFor	Archived For	The period for which the record is to be archived. 		text	2	#VALUE	TRUE	TRUE	FALSE	FALSE	FALSE	FALSE		archive	
 	archiveArchivedAt	Archived At	The location where the files are archived	URL	url	3	<a href='#VALUE'>#VALUE</a>	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		archive	https://schema.org/archivedAt
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
-	archiveArchivedFor	1 year	1	0												
-	archiveArchivedFor	3 years	3	1												
-	archiveArchivedFor	5 years	5	2												
-	archiveArchivedFor	10 years	10	3												
+	archiveArchivedFor	1 year	1_year	0												
+	archiveArchivedFor	3 years	3_years	1												
+	archiveArchivedFor	5 years	5_years	2												
+	archiveArchivedFor	10 years	10_years	3												

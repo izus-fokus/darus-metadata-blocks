@@ -47,23 +47,23 @@
 	enzymeMLKineticParameterUnit	Unit	Specifies the SI unit of the estimated kinetic parameter.		text	44	[#VALUE]	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	enzymeMLKineticParameter	enzymeML	http://www.sbml.org/sbml/level3/version2/core/unitdefinition
 	enzymeMLKineticParameterSBOTerm	SBO Term	Specifies the ID of the System Biology Ontology from branch 'systems description parameter' to define a kinetic parameter (e.g. SBO:0000545)	SBO:0000xxx	text	45	(#VALUE)	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	enzymeMLKineticParameter	enzymeML	
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
-	enzymeMLVesselUnits	ul	0	0												
-	enzymeMLVesselUnits	ml	1	1												
-	enzymeMLVesselUnits	l	2	2												
-	enzymeMLVesselConstant	Constant	1	0												
-	enzymeMLVesselConstant	Not constant	0	1												
-	enzymeMLReactantSubstanceUnits	nM	0	0												
-	enzymeMLReactantSubstanceUnits	uM	1	1												
-	enzymeMLReactantSubstanceUnits	mM	2	2												
-	enzymeMLReactantSubstanceUnits	M	3	3												
-	enzymeMLReactantConstant	Constant	1	0												
-	enzymeMLReactantConstant	Not constant	0	1												
-	enzymeMLProteinSubstanceUnits	pM	0	0												
-	enzymeMLProteinSubstanceUnits	nM	1	1												
-	enzymeMLProteinSubstanceUnits	uM	2	2												
-	enzymeMLProteinSubstanceUnits	mM	3	3												
-	enzymeMLProteinSubstanceUnits	M	4	4												
-	enzymeMLProteinConstant	Constant	1	0												
-	enzymeMLProteinConstant	Not constant	0	1												
-	enzymeMLReactionTemperatureUnit	Celsius	0	0												
-	enzymeMLReactionTemperatureUnit	Kelvin	1	1												
+	enzymeMLVesselUnits	ul	ul	0												
+	enzymeMLVesselUnits	ml	ml	1												
+	enzymeMLVesselUnits	l	l	2												
+	enzymeMLVesselConstant	Constant	constant	0												
+	enzymeMLVesselConstant	Not constant	not_constant	1												
+	enzymeMLReactantSubstanceUnits	nM	nm	0												
+	enzymeMLReactantSubstanceUnits	uM	um	1												
+	enzymeMLReactantSubstanceUnits	mM	mm	2												
+	enzymeMLReactantSubstanceUnits	M	m	3												
+	enzymeMLReactantConstant	Constant	constant	0												
+	enzymeMLReactantConstant	Not constant	not_constant	1												
+	enzymeMLProteinSubstanceUnits	pM	pm	0												
+	enzymeMLProteinSubstanceUnits	nM	nm	1												
+	enzymeMLProteinSubstanceUnits	uM	um	2												
+	enzymeMLProteinSubstanceUnits	mM	mm	3												
+	enzymeMLProteinSubstanceUnits	M	m	4												
+	enzymeMLProteinConstant	Constant	constant	0												
+	enzymeMLProteinConstant	Not constant	not_constant	1												
+	enzymeMLReactionTemperatureUnit	Celsius	celsius	0												
+	enzymeMLReactionTemperatureUnit	Kelvin	kelvin	1												

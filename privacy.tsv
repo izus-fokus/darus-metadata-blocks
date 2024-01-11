@@ -7,11 +7,11 @@
 	privTermsOfConsent	Terms of Consent	Did the content has any restrictions on sharing?	List restrictions or terms under which the consent to share is given	textbox	3	#VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		privacy	
 	privMeasures	Measures	Which technical and organisational measures are taken to secure the data (e.g. encryption of the data, rights management)?		textbox	4	#VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		privacy	
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
-	privData	no	0	0												
-	privData	yes, but anonymized	1	1												
-	privData	yes, but pseudonymized	2	2												
-	privData	yes	3	3												
-	privSpecial	no	0	0												
-	privSpecial	yes	1	1												
-	privConsent	no	0	0												
-	privConsent	yes	1	1												
+	privData	no	no	0												
+	privData	yes, but anonymized	yes,_but_anonymized	1												
+	privData	yes, but pseudonymized	yes,_but_pseudonymized	2												
+	privData	yes	yes	3												
+	privSpecial	no	no	0												
+	privSpecial	yes	yes	1												
+	privConsent	no	no	0												
+	privConsent	yes	yes	1												
