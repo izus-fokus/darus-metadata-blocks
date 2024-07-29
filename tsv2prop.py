@@ -4,6 +4,7 @@
 import sys
 import glob
 import pandas as pd
+from unidecode import unidecode
 
 help = """
 Usage: python tsv2prop.py <file.tsv>
@@ -47,9 +48,10 @@ def tsv2prop(infile=None):
                 else:
                     fid.write('datasetfieldtype.' + md_df.name[ii] + '.watermark=\n')
             for ii in range(indxCV+1,indxEnd):
+                displayName = md_df.dataverseAlias[ii].replace(" ","_")
+                displayName = unidecode(displayName)
                 fid.write('controlledvocabulary.' + md_df.name[ii] + '.' 
-                        + md_df.displayName[ii] + '=' + md_df.dataverseAlias[ii] + '\n')
-
+                        + displayName.lower() + '=' + md_df.dataverseAlias[ii] + '\n')
     except FileNotFoundError:
         raise SystemExit("File does not exist")
 
