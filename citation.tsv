@@ -50,7 +50,7 @@
 	contributorName	Name	The name of the contributor, e.g. the person's name or the name of an organization	1) FamilyName, GivenName or 2) Organization	text	46	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	contributor	citation	
 	grantNumber	Funding Information	Information about the Dataset's financial support		none	47	:	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	https://schema.org/sponsor
 	grantNumberAgency	Agency	The agency that provided financial support for the Dataset	Organization XYZ	text	48	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	grantNumber	citation	
-	grantNumberValue	Identifier	The grant identifier or contract identifier of the agency that provided financial support for the Dataset		text	49	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	grantNumber	citation	
+	grantNumberValue	Identifier	For DFG as agency: the grant identifier; Otherwise the grant identifier or contract identifier of the agency that provided financial support for the Dataset		text	49	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	grantNumber	citation	
 	project	Project	Information about the project as context of the data		none	50		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	
 	projectName	Name	Name of the project		text	51	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	project	citation
 	projectLevel	Level	The main project should get level zero, subprojects can get higher levels	0	int	52	(#NAME #VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	project	citation
