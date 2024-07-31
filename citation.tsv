@@ -29,7 +29,7 @@
 	topicClassification	Topic Classification	Indicates a broad, important topic or subject that the Dataset covers and information about any controlled vocabulary used		none	25		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	
 	topicClassValue	Term	A topic or subject term		text	26	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	topicClassification	citation	
 	topicClassVocab	Controlled Vocabulary Name	The controlled vocabulary used for the keyword term (e.g. LCSH, MeSH)		text	27	(#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	topicClassification	citation	
-	topicClassVocabURI	Controlled Vocabulary URL	The URL where one can access information about the term's controlled vocabulary	https://	url	28	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	topicClassification	citation	
+	topicClassVocabURI	Term URL	The URL where one can access information about the term, if available. Otherwise the URL of the controlled vocabulary	https://	url	28	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	topicClassification	citation	
 	publication	Related Publication	The article or report that uses the data in the Dataset. The full list of related publications will be displayed on the metadata tab		none	29		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		citation	http://purl.org/dc/terms/isReferencedBy
 	publicationCitation	Citation	The full bibliographic citation for the related publication		textbox	30	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	publication	citation	http://purl.org/dc/terms/bibliographicCitation
 	publicationIDType	Identifier Type	The type of identifier that uniquely identifies a related publication		text	31	#VALUE: 	TRUE	TRUE	FALSE	FALSE	TRUE	FALSE	publication	citation	http://purl.org/spar/datacite/ResourceIdentifierScheme
@@ -50,7 +50,7 @@
 	contributorName	Name	The name of the contributor, e.g. the person's name or the name of an organization	1) FamilyName, GivenName or 2) Organization	text	46	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	contributor	citation	
 	grantNumber	Funding Information	Information about the Dataset's financial support		none	47	:	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	https://schema.org/sponsor
 	grantNumberAgency	Agency	The agency that provided financial support for the Dataset	Organization XYZ	text	48	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	grantNumber	citation	
-	grantNumberValue	Identifier	The grant identifier or contract identifier of the agency that provided financial support for the Dataset		text	49	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	grantNumber	citation	
+	grantNumberValue	Identifier	For DFG as agency: the grant identifier; Otherwise the grant identifier or contract identifier of the agency that provided financial support for the Dataset		text	49	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	grantNumber	citation	
 	project	Project	Information about the project as context of the data		none	50		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	
 	projectName	Name	Name of the project		text	51	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	project	citation
 	projectLevel	Level	The main project should get level zero, subprojects can get higher levels	0	int	52	(#NAME #VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	project	citation
@@ -99,7 +99,7 @@
 	subject	Earth and Environmental Sciences	D4	6											
 	subject	Engineering	D5	7
 	subject	Law	D8	8	
-	subject	Mathematical Sciences	D9	9																	
+	subject	Mathematical Sciences	D9	9												
 	subject	Medicine, Health and Life Sciences	D6	10											
 	subject	Physics	D10	11											
 	subject	Social Sciences	D11	12											
