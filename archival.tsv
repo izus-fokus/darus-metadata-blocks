@@ -5,7 +5,6 @@
 	archiveArchivedFrom	Archived From	A date (YYYY-MM-DD) from whith the data set is archived	YYYY-MM-DD	date	1	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE		archive	
 	archiveArchivedFor	Archived For	The period for which the record is to be archived. 		text	2	#VALUE	TRUE	TRUE	FALSE	FALSE	FALSE	FALSE		archive	
 	archiveArchivedAt	Archived At	The location where the files are archived	URL	url	3	<a href='#VALUE'>#VALUE</a>	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		archive	https://schema.org/archivedAt
-	archiveReason	Archive Reason	The reason, why this dataset is archived and not published		text	4	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE		archive	
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
 	archiveArchivedFor	1 year	1_year	0												
 	archiveArchivedFor	3 years	3_years	1												
