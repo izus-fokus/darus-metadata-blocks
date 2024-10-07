@@ -49,13 +49,13 @@
 	contributorType	Type	Indicates the type of contribution made to the dataset		text	45	#VALUE 	TRUE	TRUE	FALSE	TRUE	FALSE	FALSE	contributor	citation	
 	contributorName	Name	The name of the contributor, e.g. the person's name or the name of an organization	1) FamilyName, GivenName or 2) Organization	text	46	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	contributor	citation	
 	project	Project	Information about the project as context of the data		none	47		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	
-	projectName	Project Name	Name of the project		text	48	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	project	citation	
-	projectAcronym	Project Acronym	Acronym of the project		text	49	#VALUE	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE	project	citation	
+	projectName	Name	Name of the project		text	48	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	project	citation	
+	projectAcronym	Acronym	Acronym/short-form of the project		text	49	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	project	citation	
 	projectLevel	Level	The main project should get level zero, subprojects can get higher levels	0	int	50	(#NAME #VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	project	citation	
-	projectIDinFIS	FIS Identifier	FIS identifier		text	51	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	project	citation	
+	projectIDinFIS	FIS Identifier	FIS identifier		int	51	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	project	citation	
 	grantNumber	Funding Information	Information about the Dataset's financial support		none	52	:	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	https://schema.org/sponsor
 	grantNumberAgency	Agency	The agency that provided financial support for the Dataset	Organization XYZ	text	53	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	grantNumber	citation	
-	grantProjectAcronym	Acronym of Related Project	Acronym of the project (as used in project information)		text	54	#VALUE	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE	grantNumber	citation	
+	grantProjectAcronym	Acronym of Related Project	Acronym/short-form of the project (as used in project information)		text	54	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	grantNumber	citation	
 	grantNumberValue	Identifier	For DFG as agency: the grant identifier; Otherwise the grant identifier or contract identifier of the agency that provided financial support for the Dataset		text	55	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	grantNumber	citation	
 	distributor	Distributor	The entity, such as a person or organization, designated to generate copies of the Dataset, including any editions or revisions		none	56		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	
 	distributorName	Name	The name of the entity, e.g. the person's name or the name of an organization	1) FamilyName, GivenName or 2) Organization	text	57	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	distributor	citation	
