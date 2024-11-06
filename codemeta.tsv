@@ -19,15 +19,20 @@
 	softwareSuggestions	Name & Version	Name and version of the optional software/library dependency	e.g. Sphinx 5.0.2	text	0	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	TRUE	softwareSuggestionsItem	codeMeta20
 	softwareSuggestionsInfoUrl	Info URL	Link to optional software/library homepage or documentation (ideally also versioned)	e.g. https://www.sphinx-doc.org	url	1	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	softwareSuggestionsItem	codeMeta20	
 	softwareSuggestionsUrl	Download URL	Link to optional software/library	https://...	url	2	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	softwareSuggestionsItem	codeMeta20	
-	memoryRequirements	Memory Requirements	Minimum memory requirements.		text	12	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/memoryRequirements
-	processorRequirements	Processor Requirements	Processor architecture or other CPU requirements to run the application (e.g. IA64).		text	13	#VALUE	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/processorRequirements
-	storageRequirements	Storage Requirements	Minimum storage requirements (e.g. free space required).		text	14	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/storageRequirements
-	permissions	Permissions	Permission(s) required to run the code (for example, a mobile app may require full internet access or may run only on wifi).		text	15	#VALUE	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/permissions
-	softwareHelp	Software Help/Documentation	Link to help texts or documentation	e.g. https://user.github.io/project/docs	url	16	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		codeMeta20	https://schema.org/softwareHelp
-	readme	Readme	Link to the README of the project	e.g. https://github.com/user/project/blob/main/README.md	url	17	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		codeMeta20	https://codemeta.github.io/terms/readme
-	releaseNotes	Release Notes	Link to release notes	e.g. https://github.com/user/project/blob/main/docs/release-0.1.md	url	18	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/releaseNotes
-	contIntegration	Continuous Integration	Link to continuous integration service	e.g. https://github.com/user/project/actions	url	19	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		codeMeta20	https://codemeta.github.io/terms/contIntegration
-	issueTracker	Issue Tracker	Link to software bug reporting or issue tracking system	e.g. https://github.com/user/project/issues	url	20	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		codeMeta20	https://codemeta.github.io/terms/issueTracker
+	memoryRequirements	Memory Requirements	Minimum memory requirements		text	12		TRUE	FALSE	TRUE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/memoryRequirements
+	memoryRequirementsValue	Memory Value	Minimum memory requirements value		text	13	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	memoryRequirements	codeMeta20	
+	memoryRequirementsUnit	Memory Unit	Memory Unit (KB, MB, GB, TB)		text	14	#VALUE	TRUE	TRUE	FALSE	FALSE	FALSE	FALSE	memoryRequirements	codeMeta20	
+	memoryRequirementsType	Memory Type	Type of memory		text	15	(#VALUE)	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	memoryRequirements	codeMeta20	
+	processorRequirements	Processor Requirements	Processor architecture or other CPU requirements to run the application (e.g. IA64).		text	16	#VALUE	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/processorRequirements
+	storageRequirements	Storage Requirements	Minimum storage requirements (e.g. free space required).		text	17	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/storageRequirements
+	storageRequirementsValue	Storage Value	Minimum storage requirements value		text	18	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	storageRequirements	codeMeta20	
+	storageRequirementsUnit	Storage Unit	Storage Unit (MB, GB, TB)		text	19	#VALUE	TRUE	TRUE	FALSE	FALSE	FALSE	FALSE	storageRequirements	codeMeta20	
+	permissions	Permissions	Permission(s) required to run the code (for example, a mobile app may require full internet access or may run only on wifi).		text	20	#VALUE	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/permissions
+	softwareHelp	Software Help/Documentation	Link to help texts or documentation	e.g. https://user.github.io/project/docs	url	21	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		codeMeta20	https://schema.org/softwareHelp
+	readme	Readme	Link to the README of the project	e.g. https://github.com/user/project/blob/main/README.md	url	22	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		codeMeta20	https://codemeta.github.io/terms/readme
+	releaseNotes	Release Notes	Link to release notes	e.g. https://github.com/user/project/blob/main/docs/release-0.1.md	url	23	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/releaseNotes
+	contIntegration	Continuous Integration	Link to continuous integration service	e.g. https://github.com/user/project/actions	url	24	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		codeMeta20	https://codemeta.github.io/terms/continuousIntegration
+	issueTracker	Issue Tracker	Link to software bug reporting or issue tracking system	e.g. https://github.com/user/project/issues	url	25	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		codeMeta20	https://codemeta.github.io/terms/issueTracker
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
 	developmentStatus	Concept	concept	0												
 	developmentStatus	WIP	wip	1												
@@ -37,3 +42,16 @@
 	developmentStatus	Moved	moved	5												
 	developmentStatus	Suspended	suspended	6												
 	developmentStatus	Abandoned	abandoned	7
+	memoryRequirementsType	RAM	ram	1												
+	memoryRequirementsType	GPU	gpu	1												
+	memoryRequirementsType	Cache	cache	1												
+	memoryRequirementsUnit	KB	kb	1												
+	memoryRequirementsUnit	MB	mb	2												
+	memoryRequirementsUnit	GB	gb	3												
+	memoryRequirementsUnit	TB	tb	4												
+	storageRequirementsUnit	KB	kb	1												
+	storageRequirementsUnit	MB	mb	2												
+	storageRequirementsUnit	GB	gb	3												
+	storageRequirementsUnit	TB	tb	4												
+	storageRequirementsUnit	PB	pb	5												
+
