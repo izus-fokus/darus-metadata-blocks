@@ -20,12 +20,12 @@
 	softwareSuggestionsInfoUrl	Info URL	Link to optional software/library homepage or documentation (ideally also versioned)	e.g. https://www.sphinx-doc.org	url	1	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	softwareSuggestionsItem	codeMeta20	
 	softwareSuggestionsUrl	Download URL	Link to optional software/library	https://...	url	2	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	softwareSuggestionsItem	codeMeta20	
 	memoryRequirements	Memory Requirements	Minimum memory requirements		text	12		TRUE	FALSE	TRUE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/memoryRequirements
-	memoryRequirementsValue	Memory Value	Minimum memory requirements value		text	13	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	memoryRequirements	codeMeta20	
-	memoryRequirementsUnit	Memory Unit	Memory Unit (KB, MB, GB, TB)		text	14	#VALUE	TRUE	TRUE	FALSE	FALSE	FALSE	FALSE	memoryRequirements	codeMeta20	
-	memoryRequirementsType	Memory Type	Type of memory		text	15	(#VALUE)	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	memoryRequirements	codeMeta20	
+	memoryRequirementsType	Memory Type	Type of memory		text	13	(#VALUE)	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	memoryRequirements	codeMeta20	
+	memoryRequirementsSize	Memory Size	Minimum memory requirements size		int	14	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	memoryRequirements	codeMeta20	
+	memoryRequirementsUnit	Memory Unit	Memory Unit (KB, MB, GB, TB)		text	15	#VALUE	TRUE	TRUE	FALSE	FALSE	FALSE	FALSE	memoryRequirements	codeMeta20	
 	processorRequirements	Processor Requirements	Processor architecture or other CPU requirements to run the application (e.g. IA64).		text	16	#VALUE	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/processorRequirements
 	storageRequirements	Storage Requirements	Minimum storage requirements (e.g. free space required).		text	17	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/storageRequirements
-	storageRequirementsValue	Storage Value	Minimum storage requirements value		text	18	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	storageRequirements	codeMeta20	
+	storageRequirementsSize	Storage Size	Minimum storage requirements size		text	18	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	storageRequirements	codeMeta20	
 	storageRequirementsUnit	Storage Unit	Storage Unit (MB, GB, TB)		text	19	#VALUE	TRUE	TRUE	FALSE	FALSE	FALSE	FALSE	storageRequirements	codeMeta20	
 	permissions	Permissions	Permission(s) required to run the code (for example, a mobile app may require full internet access or may run only on wifi).		text	20	#VALUE	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/permissions
 	softwareHelp	Software Help/Documentation	Link to help texts or documentation	e.g. https://user.github.io/project/docs	url	21	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		codeMeta20	https://schema.org/softwareHelp
@@ -43,8 +43,7 @@
 	developmentStatus	Suspended	suspended	6												
 	developmentStatus	Abandoned	abandoned	7
 	memoryRequirementsType	RAM	ram	1												
-	memoryRequirementsType	GPU	gpu	1												
-	memoryRequirementsType	Cache	cache	1												
+	memoryRequirementsType	GPU	gpu	2												
 	memoryRequirementsUnit	KB	kb	1												
 	memoryRequirementsUnit	MB	mb	2												
 	memoryRequirementsUnit	GB	gb	3												
