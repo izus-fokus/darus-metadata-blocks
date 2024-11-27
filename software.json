@@ -1,0 +1,76 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Software",
+    "description": "A base scheme to describe research software",
+    "type": "object",
+    "properties": {
+        "codeVersion": {
+            "type": "string",
+            "title": "Software version",
+            "description": "Version of a Research software using semantik versioning like major.minor.path, f.e. 1.3.2",
+            "examples": ["1.2.3","0.0.1"]
+        },
+        "developmentStatus": {
+            "type": "string",
+            "title": "Development status",
+            "description": "Development status of the research software provided. One of 'Concept', 'WIP', 'Active', 'Inactive', 'Unsupported', 'Moved', 'Suspended', 'Abandoned'",
+            "pattern": "Concept|WIP|Active|Inactive|Unsupported|Moved|Suspended|Abandoned"
+        },
+        "codeRepository": {
+            "type": "string",
+            "title": "Code repository",
+            "description": "Link to the repository where the un-compiled source code is located, e.g. https://github.com/someOrga/somerepo",
+            "pattern": "http[s]?://[a-z./-]*"
+        },
+        "programmingLanguage": {
+            "type": "string",
+            "title": "Programming Language",
+            "description": "The programming language(s) used to implement the software (e.g. Python, C++, Matlab, Fortran, Java, Julia,...)"
+        },
+        "softwareRequirements": {
+            "description": "Dependencies that are necessary to get the software to run.",
+            "title": "Software Requirements",
+            "type": "array",
+            "minItems": 0,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "softwareRequirementsName": {
+                        "type": "string",
+                        "title": "Name",
+                        "description": "Name of the required software/library dependency"
+                    },
+                    "softwareRequirementsVersion": {
+                        "type": "string",
+                        "title": "Version",
+                        "description": "Version of the required software/library dependency, e.g. 1.2.5"
+                    },
+                    "softwareRequirementsInfoUrl": {
+                        "type": "string",
+                        "title": "Info URL",
+                        "description": "Link to a page describing the software/library dependency, e.g. link to homepage, documentation, readthedocs",
+                        "pattern": "http[s]?://[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}"
+                    },
+                    "softwareRequirementsUrl": {
+                        "type": "string",
+                        "title": "Download URL",
+                        "description": "Link to a download page of the software/library dependency",
+                        "pattern": "http[s]?://[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}"
+                    },
+                    "softwareRequirementsPriority": {
+                        "type": "string",
+                        "title": "Priority",
+                        "description": "Level of commitment, one of 'required', 'recommended'",
+                        "pattern": "required|recommended"
+                    }
+                }  
+            }
+        },
+        "softwareHelp": {
+            "title": "Software Documentation / Help",
+            "description": "Link to a page with more information about the usage of the software provided",
+            "type": "string",
+            "pattern": "http[s]?://[a-z./]*"
+        }
+    }
+}

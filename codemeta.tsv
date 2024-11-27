@@ -44,6 +44,7 @@
 	developmentStatus	Abandoned	abandoned	7
 	memoryRequirementsType	RAM	ram	1												
 	memoryRequirementsType	GPU	gpu	2												
+	memoryRequirementsType	NPU	npu	3												
 	memoryRequirementsUnit	KB	kb	1												
 	memoryRequirementsUnit	MB	mb	2												
 	memoryRequirementsUnit	GB	gb	3												

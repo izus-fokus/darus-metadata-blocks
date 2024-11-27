@@ -1,0 +1,75 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Dataset",
+    "description": "A base scheme for datasets",
+    "type": "object",
+    "properties": {
+        "contributors": {
+            "description": "A person that contributed in a specific role to the dataset",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "contributorName": {
+                        "type": "string",
+                        "title": "Name",
+                        "description": "Name of the person in the format family name, given name"
+                    },
+                    "contributorRole": {
+                        "type": "string",
+                        "title": "Role",
+                        "description": "Role of the person involved, one of 'Data Collector', 'Data Curator', 'Data Manager', 'Editor', 'Funder', 'Project Leader', 'Project Manager', 'Project Member', 'Researcher', 'Rights Holder', 'Supervisor', 'Work Package Leader', 'Other",
+                        "pattern": "Data Collector|Data Curator|Data Manager|Editor|Funder|Project Leader|Project Manager|Project Member|Researcher|Rights Holder|Supervisor|Work Package Leader|Other"
+                    },
+                    "contributorId": {
+                        "type": "string",
+                        "title": "ORCID",
+                        "description": "ORCID of the person involved",
+                        "pattern": "[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]"
+                    },
+                    "contributorAffiliation":{
+                        "type": "string",
+                        "title": "Affiliation",
+                        "description": "Organisation, the person is affiliated to"                    }
+                }
+    
+            }
+        },
+        "contact": {
+            "title": "Contact",
+            "description": "Contact information",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "contactName": {
+                        "type": "string",
+                        "title": "Contact name",
+                        "description": "Name of the person or organization that can be contacted regarding the data record"
+                    },
+                    "contactEmail": {
+                        "type": "string",
+                        "title": "E-Mail-Adresse",
+                        "description": "Contact E-mail",
+                        "pattern": "[a-z.]*@[a-z.]*"
+                    }
+                }
+            }
+        },
+        "creationDate": {
+            "title": "Creation Date",
+            "description": "Date at which the data record was created in the form YYYY-MM-DD",            "type": "string",
+            "pattern": "[0-9]{4}-[0-9]{2}-[0-9]{2}"
+        },
+        "keywords": {
+            "title": "Keywords",
+            "description": "Keywords for the dataset",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "uniqueItems": true
+        }
+    }
+}
