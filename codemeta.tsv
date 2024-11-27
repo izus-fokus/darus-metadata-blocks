@@ -20,11 +20,11 @@
 	softwareSuggestionsInfoUrl	Info URL	Link to optional software/library homepage or documentation (ideally also versioned)	e.g. https://www.sphinx-doc.org	url	1	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	softwareSuggestionsItem	codeMeta20	
 	softwareSuggestionsUrl	Download URL	Link to optional software/library	https://...	url	2	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	softwareSuggestionsItem	codeMeta20	
 	memoryRequirements	Memory Requirements	Minimum memory requirements		text	12		TRUE	FALSE	TRUE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/memoryRequirements
-	memoryRequirementsType	Memory Type	Type of memory		text	13	(#VALUE)	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	memoryRequirements	codeMeta20	
-	memoryRequirementsSize	Memory Size	Minimum memory requirements size		int	14	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	memoryRequirements	codeMeta20	
-	memoryRequirementsUnit	Memory Unit	Memory Unit (KB, MB, GB, TB)		text	15	#VALUE	TRUE	TRUE	FALSE	FALSE	FALSE	FALSE	memoryRequirements	codeMeta20	
+	memoryRequirementsSize	Memory Size	Minimum memory requirements size		int	13	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	memoryRequirements	codeMeta20	
+	memoryRequirementsUnit	Memory Unit	Memory Unit (KB, MB, GB, TB)		text	14	#VALUE	TRUE	TRUE	FALSE	FALSE	FALSE	FALSE	memoryRequirements	codeMeta20	
+	memoryRequirementsType	Memory Type	Type of memory (GPU or RAM)		text	15	(#VALUE)	TRUE	TRUE	FALSE	FALSE	FALSE	FALSE	memoryRequirements	codeMeta20	
 	processorRequirements	Processor Requirements	Processor architecture or other CPU requirements to run the application (e.g. IA64).		text	16	#VALUE	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/processorRequirements
-	storageRequirements	Storage Requirements	Minimum storage requirements (e.g. free space required).		text	17	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/storageRequirements
+	storageRequirements	Storage Requirements	Minimum storage requirements (e.g. free space required).		text	17		TRUE	FALSE	FALSE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/storageRequirements
 	storageRequirementsSize	Storage Size	Minimum storage requirements size		text	18	#VALUE	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE	storageRequirements	codeMeta20	
 	storageRequirementsUnit	Storage Unit	Storage Unit (MB, GB, TB)		text	19	#VALUE	TRUE	TRUE	FALSE	FALSE	FALSE	FALSE	storageRequirements	codeMeta20	
 	permissions	Permissions	Permission(s) required to run the code (for example, a mobile app may require full internet access or may run only on wifi).		text	20	#VALUE	TRUE	FALSE	TRUE	FALSE	FALSE	FALSE		codeMeta20	https://schema.org/permissions
