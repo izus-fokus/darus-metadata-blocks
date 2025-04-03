@@ -93,7 +93,7 @@
 	storageFile	Name	The name of the file, directory or archive		text	89	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	storage	citation	
 	storageLocation	Location	The dns, path or url of the location the object is stored 		text	90	(#NAME: #VALUE)	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	storage	citation	
 	storageSize	Size	The approximated size (with units) of the object		text	91	[#NAME: #VALUE]	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	storage	citation	
-#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder											
 	subject	Agricultural Sciences	D01	0											
 	subject	Arts and Humanities	D0	1											
 	subject	Astronomy and Astrophysics	D1	2											
@@ -103,7 +103,7 @@
 	subject	Earth and Environmental Sciences	D4	6											
 	subject	Engineering	D5	7
 	subject	Law	D8	8	
-	subject	Mathematical Sciences	D9	9																	
+	subject	Mathematical Sciences	D9	9												
 	subject	Medicine, Health and Life Sciences	D6	10											
 	subject	Physics	D10	11											
 	subject	Social Sciences	D11	12											
@@ -145,13 +145,14 @@
 	contributorType	Work Package Leader		15											
 	contributorType	Other		16											
 	authorIdentifierScheme	ORCID		0											
-	authorIdentifierScheme	ISNI		1											
-	authorIdentifierScheme	LCNA		2											
-	authorIdentifierScheme	VIAF		3											
-	authorIdentifierScheme	GND		4											
-	authorIdentifierScheme	DAI		5
-	authorIdentifierScheme	ResearcherID		6
-	authorIdentifierScheme	ScopusID		7
+	authorIdentifierScheme	ROR		1											
+	authorIdentifierScheme	ISNI		2											
+	authorIdentifierScheme	LCNA		3											
+	authorIdentifierScheme	VIAF		4											
+	authorIdentifierScheme	GND		5											
+	authorIdentifierScheme	DAI		6
+	authorIdentifierScheme	ResearcherID		7
+	authorIdentifierScheme	ScopusID		8
 	language	'Are'are	alu	0	alu
 	language	'Auhelawa	kud	1	kud
 	language	A'ou	aou	2	aou
