@@ -26,10 +26,10 @@
 	keywordTermURI	Term URI	A URI that points to the web presence of the Keyword Term	https://	url	22	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	keyword	citation	
 	keywordVocabulary	Controlled Vocabulary Name	The controlled vocabulary used for the keyword term (e.g. LCSH, MeSH)		text	23	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	keyword	citation	
 	keywordVocabularyURI	Controlled Vocabulary URL	The URL where one can access information about the term's controlled vocabulary	https://	url	24	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	keyword	citation
-	topicClassification	Topic Classification	Indicates a broad, important topic or subject that the Dataset covers and information about any controlled vocabulary used		none	25		FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	
-	topicClassValue	Term	A topic or subject term		text	26	#VALUE	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	topicClassification	citation	
-	topicClassVocab	Controlled Vocabulary Name	The controlled vocabulary used for the keyword term (e.g. LCSH, MeSH)		text	27	(#VALUE)	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	topicClassification	citation	
-	topicClassVocabURI	Term URI	A URI that points to the web presence of the Topic Term, if available. Otherwise the URL of the controlled vocabulary	https://	url	28	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	topicClassification	citation	
+	topicClassification	Topic Classification	Indicates a broad, important topic or subject that the Dataset covers and information about any controlled vocabulary used		none	25		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		citation	
+	topicClassValue	Term	A topic or subject term		text	26	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	topicClassification	citation	
+	topicClassVocab	Controlled Vocabulary Name	The controlled vocabulary used for the keyword term (e.g. LCSH, MeSH)		text	27	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	topicClassification	citation	
+	topicClassVocabURI	Term URI	A URI that points to the web presence of the Topic Term, if available. Otherwise the URL of the controlled vocabulary	https://	url	28	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	topicClassification	citation	
 	publication	Related Publication	The article or report that uses the data in the Dataset. The full list of related publications will be displayed on the metadata tab		none	29		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		citation	http://purl.org/dc/terms/isReferencedBy
 	publicationRelationType	Relation Type	The nature of the relationship between this Dataset and the related publication		text	30	#VALUE:	TRUE	TRUE	FALSE	FALSE	TRUE	FALSE	publication	citation	http://datacite.org/schema/kernel-4/simpleTypes#relationType
 	publicationCitation	Citation	The full bibliographic citation for the related publication		textbox	31	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE	publication	citation	http://purl.org/dc/terms/bibliographicCitation
@@ -65,8 +65,8 @@
 	distributorURL	URL	The URL of the distributor's webpage	https://	url	61	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	distributor	citation	
 	distributorLogoURL	Logo URL	The URL of the distributor's logo image, used to show the image on the Dataset's page	https://	url	62	<img src="#VALUE" alt="#NAME" class="metadata-logo"/><br/>	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE	distributor	citation	
 	distributionDate	Distribution Date	The date when the Dataset was made available for distribution/presentation	YYYY-MM-DD	date	63		TRUE	FALSE	FALSE	TRUE	FALSE	FALSE		citation	
-	depositor	Depositor	The entity, such as a person or organization, that deposited the Dataset in the repository	1) FamilyName, GivenName or 2) Organization	text	64		FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		citation	
-	dateOfDeposit	Deposit Date	The date when the Dataset was deposited into the repository	YYYY-MM-DD	date	65		FALSE	FALSE	FALSE	TRUE	FALSE	FALSE		citation	http://purl.org/dc/terms/dateSubmitted
+	depositor	Depositor	The entity, such as a person or organization, that deposited the Dataset in the repository	1) FamilyName, GivenName or 2) Organization	text	64		FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		citation
+	dateOfDeposit	Deposit Date	The date when the Dataset was deposited into the repository	YYYY-MM-DD	date	65		FALSE	FALSE	FALSE	TRUE	TRUE	FALSE		citation	http://purl.org/dc/terms/dateSubmitted
 	timePeriodCovered	Time Period	The time period that the data refer to. Also known as span. This is the time period covered by the data, not the dates of coding, collecting data, or making documents machine-readable		none	66	;	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		citation	https://schema.org/temporalCoverage
 	timePeriodCoveredStart	Start Date	The start date of the time period that the data refer to	YYYY-MM-DD	date	67	#NAME: #VALUE 	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	timePeriodCovered	citation	
 	timePeriodCoveredEnd	End Date	The end date of the time period that the data refer to	YYYY-MM-DD	date	68	#NAME: #VALUE 	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE	timePeriodCovered	citation	
