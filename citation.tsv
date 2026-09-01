@@ -25,10 +25,10 @@
 	keywordValue	Term	A key term that describes important aspects of the Dataset		text	21	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	keyword	citation	
 	keywordTermURI	Term URI	A URI that points to the web presence of the Keyword Term	https://	url	22	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	keyword	citation	
 	keywordVocabulary	Controlled Vocabulary Name	The controlled vocabulary used for the keyword term (e.g. LCSH, MeSH)		text	23	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	keyword	citation	
-	keywordVocabularyURI	Controlled Vocabulary URL	The URL where one can access information about the term's controlled vocabulary	https://	url	24	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	keyword	citation
+	keywordVocabularyURI	Controlled Vocabulary URL	The URL where one can access information about the term's controlled vocabulary	https://	url	24	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	keyword	citation	
 	topicClassification	Topic Classification	Indicates a broad, important topic or subject that the Dataset covers and information about any controlled vocabulary used		none	25		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		citation	
 	topicClassValue	Term	A topic or subject term		text	26	#VALUE	TRUE	FALSE	FALSE	TRUE	TRUE	FALSE	topicClassification	citation	
-	topicClassTermURI	Controlled Vocabulary Term URI	A URI that points to the web presence of the term's controlled vocabulary value			27										
+	topicClassTermURI	Controlled Vocabulary Term URI	A URI that points to the web presence of the term's controlled vocabulary 	https://	url	27	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	topicClassification	citation	
 	topicClassVocab	Controlled Vocabulary Name	The controlled vocabulary used for the keyword term (e.g. LCSH, MeSH)		text	28	(#VALUE)	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	topicClassification	citation	
 	topicClassVocabURI	Controlled Vocabulary scheme URI	The URI where one can access information about the term's controlled vocabulary scheme	https://	url	29	<a href="#VALUE" target="_blank" rel="noopener">#VALUE</a>	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE	topicClassification	citation	
 	publication	Related Publication	The article or report that uses the data in the Dataset. The full list of related publications will be displayed on the metadata tab		none	30		FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		citation	http://purl.org/dc/terms/isReferencedBy
