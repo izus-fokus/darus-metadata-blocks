@@ -6,6 +6,13 @@
 	intcdcInstitute	Institute	Kürzel des beteiligten Instituts		text	3	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	  
 	intcdcCredits	Credits	Name des Urhebers/Fotografen		text	4	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc	https://schema.org/creditText
 	intcdcPermissionStatus	Permissions and Approval Status	Status der Klärung der Nutzungsrechte an den Inhalten des Datensatzes		text	5	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		intcdc	https://schema.org/usageInfo
+	intcdcTopic	Topic	Thema des Beitrags		text	6	#VALUE	TRUE	FALSE	TRUE	TRUE	FALSE	FALSE		intcdc	https://schema.org/genre
+	intcdcTeaser	Teaser	Kurzbeschreibung News-Vorschau in Timeline		text	7	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
+	intcdcNewsText	News Text	Text für News in der Timeline und Social Media Channels		text	8	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
+	inctdcPressRelease	Press Release	Pressetext für Media Center und Pressemitteilungen - Freitext für PR, um eine Pressemitteilung zu erstellen		text	9	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
+	intcdcHashtags	Social Media Handles and Hashtags	Social Media Accounts and Hashtags		text	9	8	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
+	intcdcRelevantMedia	Relevant Media	Zeitungen, Zeitschriften, Blogs etc., für den Forschungsbereich wichtige Medien		text	9	8	#VALUE	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE		intcdc
+
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
 	intcdcResearchProject	FUNCTIONALLY GRADED CONCRETE		0
 	intcdcResearchProject	MULTI-STOREY TIMBER BUILDING SYSTEM		1
@@ -36,3 +43,4 @@
 	intcdcPermisstionStatus	Nutzungsrechte für die Universität geklärt		0
 	intcdcPermisstionStatus	Freigabe muss noch geprüft werden		1
 	intcdcPermisstionStatus	Eingeschränkt / noch nicht öffentlich		2
+git 
