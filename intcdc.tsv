@@ -10,8 +10,8 @@
 	intcdcTeaser	Teaser	Kurzbeschreibung News-Vorschau in Timeline		text	7	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
 	intcdcNewsText	News Text	Text für News in der Timeline und Social Media Channels		text	8	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
 	inctdcPressRelease	Press Release	Pressetext für Media Center und Pressemitteilungen - Freitext für PR, um eine Pressemitteilung zu erstellen		text	9	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
-	intcdcHashtags	Social Media Handles and Hashtags	Social Media Accounts and Hashtags		text	9	8	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
-	intcdcRelevantMedia	Relevant Media	Zeitungen, Zeitschriften, Blogs etc., für den Forschungsbereich wichtige Medien		text	9	8	#VALUE	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE		intcdc
+	intcdcHashtags	Social Media Handles and Hashtags	Social Media Accounts and Hashtags		text	9	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
+	intcdcRelevantMedia	Relevant Media	Zeitungen, Zeitschriften, Blogs etc., für den Forschungsbereich wichtige Medien		text	10	#VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		intcdc
 
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
 	intcdcResearchProject	FUNCTIONALLY GRADED CONCRETE		0
