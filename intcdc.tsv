@@ -1,0 +1,38 @@
+#metadataBlock	name	dataverseAlias	displayName	blockURI												
+	intcdc		Metadata for internal data from IntCDC Building project													
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	intcdcResearchProject	Research Project	The subproject, the data is connected to		text	0	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	
+	intcdcUploadType	Upload Type	The file type for your upload		text	1	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	http://purl.org/spar/datacite/hasGeneralResourceType
+	intcdcInstitute	Institute	Kürzel des beteiligten Instituts		text	3	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	  
+	intcdcCredits	Credits	Name des Urhebers/Fotografen		text	4	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc	https://schema.org/creditText
+	intcdcPermissionStatus	Permissions and Approval Status	Status der Klärung der Nutzungsrechte an den Inhalten des Datensatzes		text	5	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		intcdc	https://schema.org/usageInfo
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
+	intcdcResearchProject	FUNCTIONALLY GRADED CONCRETE		0
+	intcdcResearchProject	MULTI-STOREY TIMBER BUILDING SYSTEM		1
+	intcdcResearchProject	SEGMENTED TIMBER SHELL ROOF		2
+	intcdcResearchProject	FIBRE BUILDING SYSTEM		3
+	intcdcResearchProject	ROBOTIC ON-SITE CONSTRUCTION		4
+	intcdcResearchProject	INTCDC BUILDING OVERVIEW	5
+	intcdcResearchProject	FACADE WORK		6
+	intcdcUploadType	Picture	Image	0
+	intcdcUploadType	Video	Audiovisual	1
+	intcdcUploadType	Text	Text	2
+	intcdcUploadType	Drawing/Plan		3
+	intcdcUploadType	Dataset	Dataset	4
+	intcdcUploadType	Software	Software	5
+	intcdcUploadType	Workflow	Workflow	6
+	intcdcUploadType	Other	Other	7
+	intcdcInstitute	ICD		0
+	intcdcInstitute	ILEK		1
+	intcdcInstitute	ITKE		2
+	intcdcInstitute	VISUS		3
+	intcdcInstitute	MPA		4
+	intcdcInstitute	IABP		5
+	intcdcInstitute	IWB		6
+	intcdcInstitute	IFAG		7
+	intcdcInstitute	IIGS		8
+	intcdcInstitute	MPI-IS		9
+	intcdcInstitute	Bauhaus		10
+	intcdcPermisstionStatus	Nutzungsrechte für die Universität geklärt		0
+	intcdcPermisstionStatus	Freigabe muss noch geprüft werden		1
+	intcdcPermisstionStatus	Eingeschränkt / noch nicht öffentlich		2
