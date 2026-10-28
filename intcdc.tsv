@@ -1,17 +1,20 @@
 #metadataBlock	name	dataverseAlias	displayName	blockURI												
 	intcdc		Metadata for internal data from IntCDC Building project													
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
-	intcdcResearchProject	Research Project	The subproject, the data is connected to		text	0	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	
-	intcdcUploadType	Upload Type	The file type for your upload		text	1	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	http://purl.org/spar/datacite/hasGeneralResourceType
-	intcdcInstitute	Institute	Kürzel des beteiligten Instituts		text	3	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	  
-	intcdcCredits	Credits	Name des Urhebers/Fotografen		text	4	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc	https://schema.org/creditText
-	intcdcPermissionStatus	Permissions and Approval Status	Status der Klärung der Nutzungsrechte an den Inhalten des Datensatzes		text	5	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		intcdc	https://schema.org/usageInfo
-	intcdcTopic	Topic	Thema des Beitrags		text	6	#VALUE	TRUE	FALSE	TRUE	TRUE	FALSE	FALSE		intcdc	https://schema.org/genre
-	intcdcTeaser	Teaser	Kurzbeschreibung News-Vorschau in Timeline		text	7	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
-	intcdcNewsText	News Text	Text für News in der Timeline und Social Media Channels		text	8	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
-	inctdcPressRelease	Press Release	Pressetext für Media Center und Pressemitteilungen - Freitext für PR, um eine Pressemitteilung zu erstellen		text	9	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
-	intcdcHashtags	Social Media Handles and Hashtags	Social Media Accounts and Hashtags		text	9	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
-	intcdcRelevantMedia	Relevant Media	Zeitungen, Zeitschriften, Blogs etc., für den Forschungsbereich wichtige Medien		text	10	#VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		intcdc
+	intcdcResearchProject	Research Integration	The subproject, the data is connected to		text	0	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	
+	intcdcMilestone	Milestone	Is the dataset connected to a project milestone?		text	2	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		intcdc	
+	intcdcTopic	Topic	Please indicate the topic of your research project	f.e. Materiality, Pre-Fabrication, On-Site-Construction	text	2	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	http://purl.org/spar/datacite/hasGeneralResourceType
+	intcdcInstitute	Institute	Kürzel des beteiligten Instituts		text	4	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	  
+	intcdcDataCreationDate	Data Creation Date	The time the data was created	YYYY-MM-DD	date	6	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	http://purl.org/spar/datacite/hasGeneralResourceType
+	intcdcCredits	Credits	Name des Urhebers/Fotografen	N.N.	text	8	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc	https://schema.org/creditText
+	intcdcPermissionStatus	Permission and Approval Status	Status der Klärung der Nutzungsrechte an den Inhalten des Datensatzes		text	10	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		intcdc	https://schema.org/usageInfo
+	intcdcTopic	Topic	Thema des Beitrags		text	12	#VALUE	TRUE	FALSE	TRUE	TRUE	FALSE	FALSE		intcdc	https://schema.org/genre
+	intcdcTeaser	Teaser	Kurzbeschreibung News-Vorschau in Timeline		text	14	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
+	intcdcNewsText	News Text	Text für News in der Timeline und Social Media Channels		text	16	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
+	inctdcPressRelease	Press Release	Pressetext für Media Center und Pressemitteilungen - Freitext für PR, um eine Pressemitteilung zu erstellen		text	18	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
+	intcdcHashtags	Social Media Handles and Hashtags	Please provice the social media handles and hashtags related to your research project		text	20	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc
+	intcdcRelevantMedia	Relevant Trade Media	Please indicate any relevant media outlets for your research project, e.g. AEC or Detail Magazine. If available, please also provide specific press contacts		text	22	#VALUE	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE		intcdc
+	intcdcUploadType	Upload Type	The file type for your upload		text	24	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	http://purl.org/spar/datacite/hasGeneralResourceType
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
 	intcdcResearchProject	FUNCTIONALLY GRADED CONCRETE		0
 	intcdcResearchProject	MULTI-STOREY TIMBER BUILDING SYSTEM		1
@@ -20,6 +23,8 @@
 	intcdcResearchProject	ROBOTIC ON-SITE CONSTRUCTION		4
 	intcdcResearchProject	INTCDC BUILDING OVERVIEW		5
 	intcdcResearchProject	FACADE WORK		6
+	intcdcMilestone	Yes	1	0
+	intcdcMilestone	No	0	1
 	intcdcUploadType	Picture	Image	0
 	intcdcUploadType	Video	Audiovisual	1
 	intcdcUploadType	Text	Text	2
@@ -29,16 +34,13 @@
 	intcdcUploadType	Workflow	Workflow	6
 	intcdcUploadType	Other	Other	7
 	intcdcInstitute	ICD		0
-	intcdcInstitute	ILEK		1
-	intcdcInstitute	ITKE		2
-	intcdcInstitute	VISUS		3
-	intcdcInstitute	MPA		4
-	intcdcInstitute	IABP		5
-	intcdcInstitute	IWB		6
-	intcdcInstitute	IFAG		7
-	intcdcInstitute	IIGS		8
-	intcdcInstitute	MPI-IS		9
-	intcdcInstitute	Bauhaus		10
+	intcdcInstitute	ITKE		1
+	intcdcInstitute	ILEK		2
+	intcdcInstitute	ISYS		3
+	intcdcInstitute	müllerblaustein		4
+	intcdcInstitute	EIGNER		5
+	intcdcInstitute	ZÜBLIN timber		6
+	intcdcInstitute	Future Forms		7
+	intcdcInstitute	Other		8
 	intcdcPermisstionStatus	Nutzungsrechte für die Universität geklärt		0
 	intcdcPermisstionStatus	Freigabe muss noch geprüft werden		1
-	intcdcPermisstionStatus	Eingeschränkt / noch nicht öffentlich		2
