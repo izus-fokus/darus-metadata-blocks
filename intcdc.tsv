@@ -3,12 +3,11 @@
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
 	intcdcResearchProject	Research Integration	The subproject, the data is connected to		text	0	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	
 	intcdcMilestone	Milestone	Is the dataset connected to a project milestone?		text	2	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		intcdc	
-	intcdcTopic	Topic	Please indicate the topic of your research project	f.e. Materiality, Pre-Fabrication, On-Site-Construction	text	2	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	http://purl.org/spar/datacite/hasGeneralResourceType
-	intcdcInstitute	Institute	Kürzel des beteiligten Instituts		text	4	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	  
-	intcdcDataCreationDate	Data Creation Date	The time the data was created	YYYY-MM-DD	date	6	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc	http://purl.org/spar/datacite/hasGeneralResourceType
+	intcdcTopic	Topic	Please indicate the topic of your research project	f.e. Materiality, Pre-Fabrication, On-Site-Construction	text	2	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	https://schema.org/about
+	intcdcInstitute	Institute	Kürzel des beteiligten Instituts		text	4	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	  https://schema.org/sourceOrganization
+	intcdcDataCreationDate	Data Creation Date	The time the data was created	YYYY-MM-DD	date	6	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc	https://schema.org/dateCreated
 	intcdcCredits	Credits	Name des Urhebers/Fotografen	N.N.	text	8	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc	https://schema.org/creditText
 	intcdcPermissionStatus	Permission and Approval Status	Status der Klärung der Nutzungsrechte an den Inhalten des Datensatzes		text	10	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		intcdc	https://schema.org/usageInfo
-	intcdcTopic	Topic	Thema des Beitrags		text	12	#VALUE	TRUE	FALSE	TRUE	TRUE	FALSE	FALSE		intcdc	https://schema.org/genre
 	intcdcTeaser	Teaser	Kurzbeschreibung News-Vorschau in Timeline		text	14	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
 	intcdcNewsText	News Text	Text für News in der Timeline und Social Media Channels		text	16	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
 	inctdcPressRelease	Press Release	Pressetext für Media Center und Pressemitteilungen - Freitext für PR, um eine Pressemitteilung zu erstellen		text	18	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
