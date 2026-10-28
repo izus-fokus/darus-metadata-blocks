@@ -4,15 +4,15 @@
 	intcdcResearchProject	Research Integration	The subproject, the data is connected to		text	0	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	
 	intcdcMilestone	Milestone	Is the dataset connected to a project milestone?		text	2	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		intcdc	
 	intcdcTopic	Topic	Please indicate the topic of your research project	f.e. Materiality, Pre-Fabrication, On-Site-Construction	text	2	#VALUE	TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		intcdc	https://schema.org/about
-	intcdcInstitute	Institute	Participating Institution		text	4	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	  https://schema.org/sourceOrganization
+	intcdcInstitute	Institute/Industry Partner	Participating Institution		text	4	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	  https://schema.org/sourceOrganization
 	intcdcDataCreationDate	Data Creation Date	The time the data was created	YYYY-MM-DD	date	6	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc	https://schema.org/dateCreated
-	intcdcCredits	Credits	Name of the creator/photographer	N.N.	text	8	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc	https://schema.org/creditText
+	intcdcCredits	Credits	Name of the creator/photographer	Name of the creator/photographer	text	8	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc	https://schema.org/creditText
 	intcdcPermissionStatus	Permission and Approval Status	Status of the clarification of the rights of use relating to the contents of the dataset		text	10	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		intcdc	https://schema.org/usageInfo
 	intcdcTeaser	Teaser	Brief description: News preview in the timeline		text	14	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
 	intcdcNewsText	News Text	Text for news on the timeline and social media channels		text	16	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
 	inctdcPressRelease	Press Release	Press release text for media centres		text	18	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
-	intcdcHashtags	Social Media Handles and Hashtags	Please provice the social media handles and hashtags related to your research project		text	20	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc
-	intcdcRelevantMedia	Relevant Trade Media	Please indicate any relevant media outlets for your research project, e.g. AEC or Detail Magazine. If available, please also provide specific press contacts		text	22	#VALUE	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		intcdc
+	intcdcHashtags	Social Media Handles and Hashtags	Please provice the social media handles and hashtags related to your research project	Please provice the social media handles and hashtags related to your research project	text	20	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc
+	intcdcRelevantMedia	Relevant Trade Media	Please indicate any relevant media outlets for your research project, e.g. AEC or Detail Magazine. If available, please also provide specific press contacts	Please indicate any relevant media outlets and press contacts	text	22	#VALUE	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		intcdc
 	intcdcUploadType	Upload Type	The file type for your upload		text	24	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	http://purl.org/spar/datacite/hasGeneralResourceType
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
 	intcdcResearchProject	FUNCTIONALLY GRADED CONCRETE		0
