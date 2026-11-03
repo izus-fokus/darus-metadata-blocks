@@ -11,8 +11,8 @@
 	intcdcTeaser	Teaser	Brief description: News preview in the timeline		text	14	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
 	intcdcNewsText	News Text	Text for news on the timeline and social media channels		text	16	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
 	inctdcPressRelease	Press Release	Press release text for media centres		text	18	#VALUE	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE		intcdc
-	intcdcHashtags	Please provide the social media handles and hashtags related to your research project	Social Media Handles & Hashtags: e.g. @ilek_uni_stuttgart (Instagram), @EIGNER Bauunternehmung (Linked In)	text	20	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc
-	intcdcRelevantMedia	Please indicate any relevant media outlets and press contacts	Relevant Trade Media: e.g. AEC, Detail Magazine	text	22	#VALUE	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		intcdc
+	intcdcHashtags	Social Media Handles & Hashtags	Please provide the social media handles and hashtags related to your research project	Social Media Handles & Hashtags: e.g. @ilek_uni_stuttgart (Instagram), @EIGNER Bauunternehmung (Linked In)	text	20	#VALUE	FALSE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc
+	intcdcRelevantMedia	Relevant Trade Media	Please indicate any relevant media outlets and press contacts	Relevant Trade Media: e.g. AEC, Detail Magazine	text	22	#VALUE	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		intcdc
 	intcdcUploadType	Upload Type	The file type for your upload		text	24	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	http://purl.org/spar/datacite/hasGeneralResourceType
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
 	intcdcResearchProject	FUNCTIONALLY GRADED CONCRETE		0
