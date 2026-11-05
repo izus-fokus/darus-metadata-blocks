@@ -1,7 +1,8 @@
 #metadataBlock	name	dataverseAlias	displayName	blockURI												
 	intcdc		Metadata for internal data from IntCDC Building project													
 #datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
-	intcdcResearchProject	Research Integration	The subproject, the data is connected to		text	0	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	
+	intcdcShortTitle	Short Title	Short Title for file naming	e.g. Cassette Assembly	text	0	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE		intcdc	
+	intcdcResearchProject	Research Field	The subproject, the data is connected to		text	1	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	
 	intcdcMilestone	Milestone	Is the dataset connected to a project milestone?		text	2	#VALUE	TRUE	TRUE	FALSE	TRUE	TRUE	FALSE		intcdc	
 	intcdcTopic	Topic	Please indicate the topic of your research project	e.g. Foundation Slab, Pre-Fabrication, On-Site-Construction	text	2	#VALUE	TRUE	FALSE	TRUE	TRUE	TRUE	FALSE		intcdc	https://schema.org/about
 	intcdcInstitute	Institute/Industry Partner	Participating Institution		text	4	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	  https://schema.org/sourceOrganization
@@ -15,12 +16,14 @@
 	intcdcRelevantMedia	Relevant Trade Media	Please indicate any relevant media outlets and press contacts	e.g. AEC, Detail Magazine	text	22	#VALUE	FALSE	FALSE	TRUE	FALSE	TRUE	FALSE		intcdc
 	intcdcUploadType	Upload Type	The file type for your upload		text	24	#VALUE	TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		intcdc	http://purl.org/spar/datacite/hasGeneralResourceType
 #controlledVocabulary	DatasetField	Value	identifier	displayOrder												
-	intcdcResearchProject	FUNCTIONALLY GRADED CONCRETE		0
-	intcdcResearchProject	MULTI-STOREY TIMBER BUILDING SYSTEM		1
-	intcdcResearchProject	SEGMENTED TIMBER SHELL ROOF		2
-	intcdcResearchProject	FIBRE BUILDING SYSTEM		3
-	intcdcResearchProject	ROBOTIC ON-SITE CONSTRUCTION		4
-	intcdcResearchProject	INTCDC BUILDING OVERVIEW		5
+	intcdcResearchProject	FUNCTIONALLY GRADED CONCRETE	CONCRETE	0
+	intcdcResearchProject	MULTI-STOREY TIMBER BUILDING SYSTEM	MULTI-STOREY	1
+	intcdcResearchProject	SEGMENTED TIMBER SHELL ROOF	ROOF	2
+	intcdcResearchProject	FIBRE BUILDING SYSTEM	FIBRE	3
+	intcdcResearchProject	ROBOTIC ON-SITE CONSTRUCTION	ROB_ONSITE	4
+	intcdcResearchProject	INTCDC BUILDING OVERVIEW	OVERVIEW	5
+	intcdcResearchProject	FACADE WORK	FACADE	6
+	intcdcResearchProject	OTHER	OTHER	7
 	intcdcMilestone	Yes	1	0
 	intcdcMilestone	No	0	1
 	intcdcUploadType	Picture	Image	0
